@@ -41,54 +41,14 @@ h4 {
 h5 {
   font-size: 1.25em;
 }
-strong,
-b {
-  font-weight: 700;
+p {
+  font-size: 16px !important;
 }
-a {
-  color: var(--accent);
+.p {
+  font-size: 16px !important;
+  margin-left: 10px !important;
 }
-a:hover {
-  color: var(--accent);
-}
-.link {
-  color: #76a9fa !important;
-}
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-input {
-  font-size: 16px;
-}
-table {
-  width: 100%;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-code {
-  font-family: "Menlo, Monaco, 'Courier New', monospace";
-  padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
-  border-radius: 2px;
-}
-pre {
-  margin: 1em 0px;
-  padding: 1em;
-  border-radius: 8px;
-}
-pre > code {
-  all: unset;
-}
-blockquote {
-  border-left: 4px solid var(--accent);
-  padding: 0 0 0 20px;
-  margin: 0px;
-  font-size: 1.2em;
-}
+
 hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
