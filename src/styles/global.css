@@ -54,12 +54,6 @@ a:hover {
 .link {
   color: #76a9fa !important;
 }
-p {
-  margin-bottom: 1em;
-}
-.prose p {
-  margin-bottom: 2em;
-}
 textarea {
   width: 100%;
   font-size: 16px;
