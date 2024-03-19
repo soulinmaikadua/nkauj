@@ -1,0 +1,39 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('learning')).sort(
+	(a:any, b:any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="bg-black text-white">
+		<Header />
+		<main class="max-w-6xl mx-auto px-4 py-3">
+			<section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					{
+						posts.map((post:any) => (
+								<a href={`/my-learning-path/learning/${post.slug}/`} class="shadow-md rounded shadow-orange-300 hover:shadow-orange-600">
+									<img width={720} height={360} src={post.data.heroImage} alt={post.data.title}  />
+									<div class="p-4">
+										<h4 class="title">{post.data.title}</h4>
+										<p class="date">
+											{ post.data.pubDate}
+										</p>
+									</div>
+								</a>
+						))
+					}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

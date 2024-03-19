@@ -1,0 +1,70 @@
+---
+title: "Go(Golang) with Fiber and MongoDB"
+description: "A simple Go(Golang) with MongoDB project"
+pubDate: "Mar 14 2024"
+heroImage: "/my-learning-path/go-with-mongodb.png"
+---
+
+```bash
+go mod init github.com/your/repo
+```
+
+```go
+package main
+
+import (
+	"fmt"
+	"log"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/soulinmaikadua/go-with-mongodb/pkg/configs"
+	"github.com/soulinmaikadua/go-with-mongodb/pkg/routes"
+)
+
+func main() {
+	// Connect to the database
+	if err := configs.Connect(); err != nil {
+		log.Fatal(err)
+	}
+
+	app := fiber.New()
+
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"message": "Hello world!",
+		})
+	})
+
+	// routes
+	routes.AuthRoutes(app)
+	routes.UserRoutes(app)
+
+	port := 6000
+	addr := fmt.Sprintf(":%d", port)
+
+	err := app.Listen(addr)
+	if err != nil {
+		fmt.Printf("Error starting the server: %v\n", err)
+	}
+}
+```
+
+<a
+  href="https://github.com/soulinmaikadua/go-with-mongodb"
+  target="_blank"
+  class="link hover:underline"
+>
+  Github repository
+</a>
+
+<div class="flex justify-between">Related projects</div>
+<ul class="ml-5">
+  <li class="list-disc">
+    <a
+      href="/my-learning-path/learning/go-with-postgresql"
+      class="link hover:underline"
+    >
+      Go(GoLang) with Fiber and PostgreSQL
+    </a>
+  </li>
+</ul>
