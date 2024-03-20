@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	// site: 'nkauj.com',
+	site: 'nkaujhmoob.netlify.app',
 	output: "server",
 	adapter: netlify(),
 	// base: "nkauj",
