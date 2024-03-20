@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://soulinmaikadua.github.io',
-	base: "nkauj",
+	site: 'nkauj.com',
+	// base: "nkauj",
 	integrations: [mdx(), sitemap(), tailwind()]
 });
