@@ -12,6 +12,7 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+
 ---
 
 <!-- Global Metadata -->
@@ -45,9 +46,3 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta name="google-site-verification" content="F4BrqsA0T17AcYtPsSAcB1RI5jQw4_JpWVLOFTur3UU" />
 <meta name="msvalidate.01" content="A4750DF417057BD77FDD08359A00BAF1" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5349802525175772" crossorigin="anonymous" data-ad-client="ca-pub-5349802525175772" ></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-F3F58WGZCM');
-</script>
