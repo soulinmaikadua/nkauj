@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BlogNkauj from '../../layouts/BlogNkauj.astro';
+import RelatedSong from '../../components/RelatedSong.astro';
+export const prerender = true;
+export async function getStaticPaths() {
+	const posts = await getCollection('kawm-muas');
+	return posts.map((post:any) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'kawm-muas'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<BlogNkauj {...post.data}>
+	<Content />
+	<RelatedSong name="kawm-muas" />
+</BlogNkauj>
