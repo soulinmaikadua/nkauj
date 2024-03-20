@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from '../consts';
 ---
 
 <!doctype html>
@@ -19,6 +19,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</div>
 			<p>Well, I just want to keep and track my learning.</p>
 			<p>🤯</p>
+			<div>
+				{ ARTISTS.map((artist)=>{
+					return <a href={`/${artist.value}`} class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 rounded-full">{artist.name}</a>
+				})}
+
+			</div>
 		</main>
 		<Footer />
 		<script type="text/javascript">
