@@ -25,6 +25,14 @@ export const ARTISTS = [
     value: "kub-qav-kaws-vaj",
   },
   {
+    name: "Ntsaim Vaj",
+    value: "ntsaim-vaj",
+  },
+  {
+    name: "David Yang",
+    value: "david-yang",
+  },
+  {
     name: "Pov Thoj",
     value: "pov-thoj",
   },
