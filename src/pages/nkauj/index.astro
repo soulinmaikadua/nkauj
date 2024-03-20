@@ -18,13 +18,12 @@ const posts = (await getCollection("nkauj")).sort(
   <body>
     <Header />
     <main class="max-w-6xl mx-auto px-4 py-3">
-     ww {posts} ww
       <section>
         {
           posts.map((post: any) => (
             <div class="border-b mb-2">
               <a
-                href={`/nkauj/nkauj/${post.slug}/`}
+                href={`/nkauj/${post.slug}/`}
                 class="shadow-md rounded shadow-orange-300 hover:shadow-orange-600"
               >
                 <h4 class="title">{post.data.title}</h4>

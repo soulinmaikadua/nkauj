@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogNkauj from '../../layouts/BlogNkauj.astro';
-
+export const prerender = true;
 export async function getStaticPaths() {
 	const posts = await getCollection('nkauj');
 	return posts.map((post:any) => ({
