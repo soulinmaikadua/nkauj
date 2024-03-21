@@ -65,11 +65,51 @@ export const ARTISTS = [
     value: "yasmi",
   },
   {
+    name: "Maiv Xyooj",
+    value: "maiv-xyooj",
+  },
+  {
+    name: "Luj Yaj",
+    value: "luj-yaj",
+  },
+  {
     name: "Destiny Band",
     value: "destiny-band",
   },
   {
+    name: "Tub Yaj",
+    value: "tub-yaj",
+  },
+  {
+    name: "Maiv Huas Hawj",
+    value: "maiv-huas-hawj",
+  },
+  {
+    name: "ICU (Kub Vaj)",
+    value: "icu-kub-vaj",
+  },
+  {
+    name: "Mang Vang",
+    value: "mang-vang",
+  },
+  {
+    name: "Maiv Thoj",
+    value: "maiv-thoj",
+  },
+  {
+    name: "The Sounders",
+    value: "the-sounders",
+  },
+  {
     name: "MR. FBI Yim Lee",
     value: "fbi-yim-lee",
+  },
+  {
+    name: "Blong Her",
+    value: "blong-her",
+  },
+  {
+    name: "Bounmee Lee",
+    value: "bounmee-lee",
   },
 ];
