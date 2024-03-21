@@ -57,6 +57,18 @@ export const ARTISTS = [
     value: "kos-lis",
   },
   {
+    name: "Zuag Lauj",
+    value: "zuag-lauj",
+  },
+  {
+    name: "Yasmi",
+    value: "yasmi",
+  },
+  {
+    name: "Destiny Band",
+    value: "destiny-band",
+  },
+  {
     name: "MR. FBI Yim Lee",
     value: "fbi-yim-lee",
   },
