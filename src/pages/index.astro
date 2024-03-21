@@ -21,13 +21,17 @@ import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from '../consts';
 			<p>🤯</p>
 			<div>
 				{ ARTISTS.map((artist)=>{
-					return <a href={`/${artist.value}`} class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 mt-3 rounded-full">{artist.name}</a>
+					return <a href={`/${artist.value}`}>
+						<button class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 mt-3 rounded-full">
+							{artist.name}
+						</button>
+					</a>
 				})}
 
 			</div>
 		</main>
 		<Footer />
-		<script is:inline type="text/javascript">
+		<script is:inline type="text/partytown">
 			(function(w,d,s,l,i){
 				w[l]=w[l]||[];
 				w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});

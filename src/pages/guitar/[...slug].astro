@@ -1,8 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogNkauj from '../../layouts/BlogNkauj.astro';
-import RelatedGuitar from '../../components/RelatedGuitar.astro';
-
+import RelatedSong from '../../components/RelatedSong.astro';
 export const prerender = true;
 export async function getStaticPaths() {
 	const posts = await getCollection('guitar');
@@ -19,5 +18,5 @@ const { Content } = await post.render();
 
 <BlogNkauj {...post.data}>
 	<Content />
-	<RelatedGuitar name="guitar-tsom-xyooj" />
+	<RelatedSong name="guitar" />
 </BlogNkauj>

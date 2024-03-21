@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 const  { name } = Astro.props;
 const { slug } = Astro.params;
 
-const posts = (await getCollection(name)).filter((post:any) => post.id.includes(name) && post.slug !== slug);
+const posts = (await getCollection(name)).filter((post:any) =>  post.slug !== slug);
 ---
 { posts.length >0 &&
 	<div class="mt-10">
@@ -19,7 +19,7 @@ const posts = (await getCollection(name)).filter((post:any) => post.id.includes(
                 href={`/${name}/${post.slug}/`}
                 class="shadow-md rounded shadow-orange-300 hover:shadow-orange-600"
               >
-                <h5>{post.data.title}</h5>
+                <h5 class="text-xl">{post.data.title}</h5>
               </a>
               <p class="text-sm mt-n4">{post.data.pubDate}</p>
             </div>

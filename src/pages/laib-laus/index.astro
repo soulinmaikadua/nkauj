@@ -26,7 +26,7 @@ const posts = (await getCollection("laib-laus")).sort(
                 href={`/laib-laus/${post.slug}/`}
                 class="shadow-md rounded shadow-orange-300 hover:shadow-orange-600"
               >
-                <h4 class="title">{post.data.title}</h4>
+                <h4 class="text-2xl">{post.data.title}</h4>
               </a>
               <p class="text-sm">{post.data.pubDate}</p>
             </div>
