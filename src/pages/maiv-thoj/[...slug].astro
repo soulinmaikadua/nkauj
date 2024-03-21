@@ -5,13 +5,13 @@ import RelatedSong from '../../components/RelatedSong.astro';
 import ServerRenderOnly from '../../components/ServerRenderOnly.astro';
 export const prerender = true;
 export async function getStaticPaths() {
-	const posts = await getCollection('maiv-vaj');
+	const posts = await getCollection('maiv-thoj');
 	return posts.map((post:any) => ({
 		params: { slug: post.slug },
 		props: post,
 	}));
 }
-type Props = CollectionEntry<'maiv-vaj'>;
+type Props = CollectionEntry<'maiv-thoj'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
@@ -20,5 +20,5 @@ const { Content } = await post.render();
 <BlogNkauj {...post.data}>
 	<ServerRenderOnly data={post.data} />
 	<Content />
-	<RelatedSong name="maiv-vaj" />
+	<RelatedSong name="maiv-thoj" />
 </BlogNkauj>
