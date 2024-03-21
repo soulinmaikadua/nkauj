@@ -41,6 +41,22 @@ export const ARTISTS = [
     value: "pob-tsuas-xyooj",
   },
   {
+    name: "Tsua Muas",
+    value: "tsua-muas",
+  },
+  {
+    name: "Zaj Dub",
+    value: "zaj-dub",
+  },
+  {
+    name: "Khab Lis",
+    value: "khab-lis",
+  },
+  {
+    name: "Kos Lis",
+    value: "kos-lis",
+  },
+  {
     name: "MR. FBI Yim Lee",
     value: "fbi-yim-lee",
   },
