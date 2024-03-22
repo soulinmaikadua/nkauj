@@ -5,52 +5,32 @@ export const SITE_TITLE = "Nkauj hmoob";
 export const SITE_DESCRIPTION = "Nkauj hmoob zoo siab txhais tos!";
 export const ARTISTS = [
   {
+    name: "Blong Her",
+    value: "blong-her",
+  },
+  {
+    name: "Bounmee Lee",
+    value: "bounmee-lee",
+  },
+  {
     name: "Dang Thao",
     value: "dang-thao",
-  },
-  {
-    name: "Kawm muas",
-    value: "kawm-muas",
-  },
-  {
-    name: "Laib laus",
-    value: "laib-laus",
-  },
-  {
-    name: "Tsom xyooj",
-    value: "tsom-xyooj",
-  },
-  {
-    name: "Xab Thoj",
-    value: "xab-thoj",
-  },
-  {
-    name: "Kub Qav Kaws Vaj",
-    value: "kub-qav-kaws-vaj",
-  },
-  {
-    name: "Ntsaim Vaj",
-    value: "ntsaim-vaj",
   },
   {
     name: "David Yang",
     value: "david-yang",
   },
   {
-    name: "Pov Thoj",
-    value: "pov-thoj",
+    name: "Destiny Band",
+    value: "destiny-band",
   },
   {
-    name: "Pob Tsuas Xyooj",
-    value: "pob-tsuas-xyooj",
+    name: "ICU (Kub Vaj)",
+    value: "icu-kub-vaj",
   },
   {
-    name: "Tsua Muas",
-    value: "tsua-muas",
-  },
-  {
-    name: "Zaj Dub",
-    value: "zaj-dub",
+    name: "Kawm muas",
+    value: "kawm-muas",
   },
   {
     name: "Khab Lis",
@@ -61,59 +41,87 @@ export const ARTISTS = [
     value: "kos-lis",
   },
   {
-    name: "Zuag Lauj",
-    value: "zuag-lauj",
+    name: "Kub Qav Kaws Vaj",
+    value: "kub-qav-kaws-vaj",
   },
   {
-    name: "Yasmi",
-    value: "yasmi",
+    name: "Laib laus",
+    value: "laib-laus",
   },
   {
-    name: "Maiv Xyooj",
-    value: "maiv-xyooj",
+    name: "Lis Koob Xyooj",
+    value: "lis-koob-xyooj",
   },
   {
     name: "Luj Yaj",
     value: "luj-yaj",
   },
   {
-    name: "Destiny Band",
-    value: "destiny-band",
-  },
-  {
-    name: "Tub Yaj",
-    value: "tub-yaj",
-  },
-  {
     name: "Maiv Huas Hawj",
     value: "maiv-huas-hawj",
-  },
-  {
-    name: "ICU (Kub Vaj)",
-    value: "icu-kub-vaj",
-  },
-  {
-    name: "Mang Vang",
-    value: "mang-vang",
   },
   {
     name: "Maiv Thoj",
     value: "maiv-thoj",
   },
   {
-    name: "The Sounders",
-    value: "the-sounders",
+    name: "Maiv Xyooj",
+    value: "maiv-xyooj",
+  },
+  {
+    name: "Mang Vang",
+    value: "mang-vang",
   },
   {
     name: "MR. FBI Yim Lee",
     value: "fbi-yim-lee",
   },
   {
-    name: "Blong Her",
-    value: "blong-her",
+    name: "Ntsaim Vaj",
+    value: "ntsaim-vaj",
   },
   {
-    name: "Bounmee Lee",
-    value: "bounmee-lee",
+    name: "Pob Tsuas Xyooj",
+    value: "pob-tsuas-xyooj",
+  },
+  {
+    name: "Pov Thoj",
+    value: "pov-thoj",
+  },
+  {
+    name: "The Sounders",
+    value: "the-sounders",
+  },
+  {
+    name: "Tub Yaj",
+    value: "tub-yaj",
+  },
+  {
+    name: "Tsom xyooj",
+    value: "tsom-xyooj",
+  },
+  {
+    name: "Tsua Muas",
+    value: "tsua-muas",
+  },
+  {
+    name: "Xab Thoj",
+    value: "xab-thoj",
+  },
+  {
+    name: "Yasmi",
+    value: "yasmi",
+  },
+  {
+    name: "Zaj Dub",
+    value: "zaj-dub",
+  },
+  {
+    name: "Zuag Lauj",
+    value: "zuag-lauj",
+  },
+  {
+    name: "Jeeker Her",
+    value: "jeeker-her",
   },
 ];
