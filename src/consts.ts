@@ -5,6 +5,10 @@ export const SITE_TITLE = "Nkauj hmoob";
 export const SITE_DESCRIPTION = "Nkauj hmoob zoo siab txhais tos!";
 export const ARTISTS = [
   {
+    name: "Dang Thao",
+    value: "dang-thao",
+  },
+  {
     name: "Kawm muas",
     value: "kawm-muas",
   },
