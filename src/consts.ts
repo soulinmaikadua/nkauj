@@ -124,4 +124,8 @@ export const ARTISTS = [
     name: "Jeeker Her",
     value: "jeeker-her",
   },
+  {
+    name: "Nquab Tsab",
+    value: "nquab-tsab",
+  },
 ];
