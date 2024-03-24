@@ -56,6 +56,9 @@ hr {
 b {
   color: red;
 }
+strong {
+  color: red !important;
+}
 .sr-only {
   border: 0;
   padding: 0;
