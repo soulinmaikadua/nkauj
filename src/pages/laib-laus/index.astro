@@ -2,18 +2,22 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../../consts";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("laib-laus")).sort(
-  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const singer = ARTISTS.find((el: any) => el.value === "laib-laus");
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={singer?.name || SITE_TITLE}
+      description={singer?.description || SITE_DESCRIPTION}
+    />
   </head>
   <body>
     <Header />

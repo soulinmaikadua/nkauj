@@ -5,127 +5,173 @@ export const SITE_TITLE = "Nkauj hmoob";
 export const SITE_DESCRIPTION = "Nkauj hmoob zoo siab txhais tos!";
 export const ARTISTS = [
   {
+    name: "Ariya",
+    value: "ariya",
+    description: "Ariya lyrics",
+  },
+  {
     name: "Blong Her",
     value: "blong-her",
+    description: "Blong Her lyrics",
   },
   {
     name: "Bounmee Lee",
     value: "bounmee-lee",
+    description: "Bounmee Lee lyrics",
   },
   {
     name: "Dang Thao",
     value: "dang-thao",
+    description: "Dang Thao lyrics",
   },
   {
     name: "David Yang",
     value: "david-yang",
+    description: "David Yang lyrics",
   },
   {
     name: "Destiny Band",
     value: "destiny-band",
+    description: "Destiny Band lyrics",
+  },
+  {
+    name: "ET Yang",
+    value: "et-yang",
+    description: "ET Yang lyrics",
   },
   {
     name: "ICU (Kub Vaj)",
     value: "icu-kub-vaj",
+    description: "ICU (Kub Vaj) lyrics",
   },
   {
     name: "Kawm muas",
     value: "kawm-muas",
+    description: "Kawm Muas lyrics",
   },
   {
     name: "Khab Lis",
     value: "khab-lis",
+    description: "Khab Lis lyrics",
   },
   {
     name: "Kos Lis",
     value: "kos-lis",
+    description: "Kos Lis lyrics",
   },
   {
     name: "Kub Qav Kaws Vaj",
     value: "kub-qav-kaws-vaj",
+    description: "Kub Qav Kaws Vaj lyrics",
   },
   {
     name: "Laib laus",
     value: "laib-laus",
+    description: "Laib Laus lyrics",
   },
   {
     name: "Lis Koob Xyooj",
     value: "lis-koob-xyooj",
+    description: "Lis Koob Xyooj lyrics",
   },
   {
     name: "Luj Yaj",
     value: "luj-yaj",
+    description: "Luj Yaj lyrics",
   },
   {
     name: "Maiv Huas Hawj",
     value: "maiv-huas-hawj",
+    description: "Maiv Huas Hawj lyrics",
   },
   {
     name: "Maiv Thoj",
     value: "maiv-thoj",
+    description: "Maiv Thoj lyrics",
   },
   {
     name: "Maiv Xyooj",
     value: "maiv-xyooj",
+    description: "Maiv Xyooj lyrics",
   },
   {
     name: "Mang Vang",
     value: "mang-vang",
+    description: "Mang Vang lyrics",
   },
   {
     name: "MR. FBI Yim Lee",
     value: "fbi-yim-lee",
+    description: "MR. FBI Yim Lis lyrics",
   },
   {
     name: "Ntsaim Vaj",
     value: "ntsaim-vaj",
+    description: "Ntsaim Vaj lyrics",
   },
   {
     name: "Pob Tsuas Xyooj",
     value: "pob-tsuas-xyooj",
+    description: "Pob Tsuas Xyooj lyrics",
   },
   {
     name: "Pov Thoj",
     value: "pov-thoj",
+    description: "Pov Thoj lyrics",
+  },
+  {
+    name: "Sudden Rush",
+    value: "suddenrush",
+    description: "Sudden Rush lyrics",
   },
   {
     name: "The Sounders",
     value: "the-sounders",
+    description: "The Sounders lyrics",
   },
   {
     name: "Tub Yaj",
     value: "tub-yaj",
+    description: "Tub Yaj lyrics",
   },
   {
-    name: "Tsom xyooj",
+    name: "Tsom Xyooj",
     value: "tsom-xyooj",
+    description: "Tsom Xyooj lyrics",
   },
   {
     name: "Tsua Muas",
     value: "tsua-muas",
+    description: "Tsua Muas lyrics",
   },
   {
     name: "Xab Thoj",
     value: "xab-thoj",
+    description: "Xab Thoj lyrics",
   },
   {
     name: "Yasmi",
     value: "yasmi",
+    description: "Yasmi lyrics",
   },
   {
     name: "Zaj Dub",
     value: "zaj-dub",
+    description: "Zaj Dub lyrics",
   },
   {
     name: "Zuag Lauj",
     value: "zuag-lauj",
+    description: "Zuag Lauj lyrics",
   },
   {
     name: "Jeeker Her",
     value: "jeeker-her",
+    description: "Jeeker Her lyrics",
   },
   {
     name: "Nquab Tsab",
     value: "nquab-tsab",
+    description: "Nquab Tsab lyrics",
   },
 ];
