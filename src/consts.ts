@@ -194,4 +194,9 @@ export const ARTISTS = [
     value: "tuam-yaj",
     description: "Tuam Yaj lyrics",
   },
+  {
+    name: "Maiv Ntxawm Tsab",
+    value: "maiv-ntxawm-tsab",
+    description: "Maiv Ntxawm Tsab lyrics",
+  },
 ];
