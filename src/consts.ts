@@ -65,7 +65,7 @@ export const ARTISTS = [
     description: "Kub Qav Kaws Vaj lyrics",
   },
   {
-    name: "Laib laus",
+    name: "Laib Laus",
     value: "laib-laus",
     description: "Laib Laus lyrics",
   },
@@ -173,5 +173,15 @@ export const ARTISTS = [
     name: "Nquab Tsab",
     value: "nquab-tsab",
     description: "Nquab Tsab lyrics",
+  },
+  {
+    name: "Txiab Yaj",
+    value: "txiab-yaj",
+    description: "Txiab Yaj lyrics",
+  },
+  {
+    name: "Nplooj Xyooj",
+    value: "nplooj-xyooj",
+    description: "Nplooj Xyooj lyrics",
   },
 ];
