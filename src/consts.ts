@@ -184,4 +184,14 @@ export const ARTISTS = [
     value: "nplooj-xyooj",
     description: "Nplooj Xyooj lyrics",
   },
+  {
+    name: "Leng Yang",
+    value: "leng-yang",
+    description: "Leng Yang lyrics",
+  },
+  {
+    name: "Tuam Yaj",
+    value: "tuam-yaj",
+    description: "Tuam Yaj lyrics",
+  },
 ];

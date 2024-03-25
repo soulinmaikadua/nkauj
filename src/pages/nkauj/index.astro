@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("nkauj")).sort(
-  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
@@ -17,7 +17,7 @@ const posts = (await getCollection("nkauj")).sort(
   </head>
   <body>
     <Header />
-    <main class="max-w-6xl mx-auto px-4 py-3">
+    <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
       <section>
         {
           posts.map((post: any) => (
