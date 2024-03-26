@@ -224,4 +224,14 @@ export const ARTISTS = [
     value: "win-vang",
     description: "Win Vang lyrics",
   },
+  {
+    name: "Maa Vue",
+    value: "maa-vue",
+    description: "Maa Vue lyrics",
+  },
+  {
+    name: "Tsab Mim Xyooj",
+    value: "tsab-mim-xyooj",
+    description: "Tsab Mim Xyooj lyrics",
+  },
 ];
