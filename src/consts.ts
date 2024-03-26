@@ -234,4 +234,14 @@ export const ARTISTS = [
     value: "tsab-mim-xyooj",
     description: "Tsab Mim Xyooj lyrics",
   },
+  {
+    name: "Tub Xyooj",
+    value: "tub-xyooj",
+    description: "Tub Xyooj lyrics",
+  },
+  {
+    name: "Hnub Lauj",
+    value: "hnub-lauj",
+    description: "Hnub Lauj lyrics",
+  },
 ];
