@@ -209,4 +209,9 @@ export const ARTISTS = [
     value: "escapes",
     description: "Escapes lyrics",
   },
+  {
+    name: "Xy Lee",
+    value: "xy-lee",
+    description: "Xy Lee lyrics",
+  },
 ];
