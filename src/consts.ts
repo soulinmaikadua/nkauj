@@ -214,4 +214,14 @@ export const ARTISTS = [
     value: "xy-lee",
     description: "Xy Lee lyrics",
   },
+  {
+    name: "Lwm Yaj",
+    value: "lwm-yaj",
+    description: "Lwm Yaj lyrics",
+  },
+  {
+    name: "Win Vang",
+    value: "win-vang",
+    description: "Win Vang lyrics",
+  },
 ];
