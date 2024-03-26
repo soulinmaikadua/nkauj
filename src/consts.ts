@@ -244,4 +244,9 @@ export const ARTISTS = [
     value: "hnub-lauj",
     description: "Hnub Lauj lyrics",
   },
+  {
+    name: "2 Siab",
+    value: "2-siab",
+    description: "2 Siab lyrics",
+  },
 ];
