@@ -199,4 +199,14 @@ export const ARTISTS = [
     value: "maiv-ntxawm-tsab",
     description: "Maiv Ntxawm Tsab lyrics",
   },
+  {
+    name: "Huas Ham",
+    value: "huas-ham",
+    description: "Huas Ham lyrics",
+  },
+  {
+    name: "Escapes",
+    value: "escapes",
+    description: "Escapes lyrics",
+  },
 ];
