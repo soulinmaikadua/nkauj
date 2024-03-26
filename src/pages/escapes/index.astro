@@ -1,0 +1,43 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../../consts";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("escapes")).sort(
+  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const singer = ARTISTS.find((el: any) => el.value === "escapes");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={singer?.name || SITE_TITLE}
+      description={singer?.description || SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
+      <section>
+        {
+          posts.map((post: any) => (
+            <div class="border-b mb-2">
+              <a
+                href={`/escapes/${post.slug}/`}
+                class="shadow-md rounded shadow-orange-300 hover:shadow-orange-600"
+              >
+                <h4 class="text-2xl">{post.data.title}</h4>
+              </a>
+              <p class="text-sm">{post.data.pubDate}</p>
+            </div>
+          ))
+        }
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

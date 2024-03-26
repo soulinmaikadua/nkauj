@@ -199,4 +199,49 @@ export const ARTISTS = [
     value: "maiv-ntxawm-tsab",
     description: "Maiv Ntxawm Tsab lyrics",
   },
+  {
+    name: "Huas Ham",
+    value: "huas-ham",
+    description: "Huas Ham lyrics",
+  },
+  {
+    name: "Escapes",
+    value: "escapes",
+    description: "Escapes lyrics",
+  },
+  {
+    name: "Xy Lee",
+    value: "xy-lee",
+    description: "Xy Lee lyrics",
+  },
+  {
+    name: "Lwm Yaj",
+    value: "lwm-yaj",
+    description: "Lwm Yaj lyrics",
+  },
+  {
+    name: "Win Vang",
+    value: "win-vang",
+    description: "Win Vang lyrics",
+  },
+  {
+    name: "Maa Vue",
+    value: "maa-vue",
+    description: "Maa Vue lyrics",
+  },
+  {
+    name: "Tsab Mim Xyooj",
+    value: "tsab-mim-xyooj",
+    description: "Tsab Mim Xyooj lyrics",
+  },
+  {
+    name: "Tub Xyooj",
+    value: "tub-xyooj",
+    description: "Tub Xyooj lyrics",
+  },
+  {
+    name: "Hnub Lauj",
+    value: "hnub-lauj",
+    description: "Hnub Lauj lyrics",
+  },
 ];
