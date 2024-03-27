@@ -9,7 +9,7 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://nkauj.netlify.app/',
+	site: 'https://nkauj.com/',
 	output: "server",
 	adapter: netlify(),
 	// adapter: vercel(),
