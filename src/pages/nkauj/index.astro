@@ -2,7 +2,7 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { SITE_TITLE } from "../../consts";
 import { getCollection } from "astro:content";
 import { dateFormat } from "../../utils";
 const posts = (await getCollection("nkauj")).sort(
@@ -13,7 +13,10 @@ const posts = (await getCollection("nkauj")).sort(
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={`${SITE_TITLE} - Ntawv nkauj hmoob`}
+      description="Cov ntawv nkauj hmoob..."
+    />
   </head>
   <body>
     <Header />

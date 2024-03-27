@@ -1,0 +1,41 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${SITE_TITLE} - About Us`}
+      description="Nkauj hmoob zoo siab txais tos"
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="max-w-6xl mx-auto px-4 min-h-screen">
+      <div class="mt-5 md:mb-60">
+        <div class="grid grid-cols-1">
+          <div class="col-span-2">
+            <h1 class="text-2xl font-bold border-b-2">About Us</h1>
+            <div>
+              <p>Nkauj hmoob zoo siab txais tos</p>
+              <p>
+                Nkauj hmoob yog ib tus website uas tso ntawv nkauj, kwv txhiab,
+                guitar thiab tseem tshuav ntau ntau yam...
+              </p>
+            </div>
+            <div class="mt-5">
+              <p>Sau ntawv rau peb tau</p>
+              <p>Email:</p>
+              <p>sou.dev3@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
