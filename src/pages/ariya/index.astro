@@ -3,6 +3,7 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../../consts";
+import { dateFormat } from "../../utils";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("ariya")).sort(
@@ -32,7 +33,11 @@ const singer = ARTISTS.find((el: any) => el.value === "ariya");
               >
                 <h4 class="text-2xl">{post.data.title}</h4>
               </a>
-              <p class="text-sm">{post.data.pubDate}</p>
+              <p class="text-sm">
+                <time datetime={post.data.pubDate}>
+                  {dateFormat(post.data.pubDate)}
+                </time>
+              </p>
             </div>
           ))
         }

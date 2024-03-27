@@ -4,7 +4,7 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../../consts";
 import { getCollection } from "astro:content";
-
+import { dateFormat } from "../../utils";
 const posts = (await getCollection("maiv-thoj")).sort(
   (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
@@ -32,7 +32,11 @@ const singer = ARTISTS.find((el: any) => el.value === "maiv-thoj");
               >
                 <h4 class="text-2xl">{post.data.title}</h4>
               </a>
-              <p class="text-sm">{post.data.pubDate}</p>
+              <p class="text-sm">
+                <time datetime={post.data.pubDate}>
+                  {dateFormat(post.data.pubDate)}
+                </time>
+              </p>
             </div>
           ))
         }
