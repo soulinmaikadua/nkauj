@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 
 type Props = CollectionEntry<"nkauj">["data"];
 
-const { title, description, pubDate } = Astro.props;
+const { title, description, artist, pubDate } = Astro.props;
 
 // Parse the date string
 const date = new Date(pubDate);
@@ -29,6 +29,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <main class="max-w-6xl mx-auto px-4">
       <article>
         <div>
+          <p>{artist}</p>
           <h1 class="text-3xl font-bold">{title}</h1>
           <p class="text-sm">
             <time datetime={pubDate}>{formattedDate}</time>

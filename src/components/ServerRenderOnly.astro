@@ -1,14 +1,17 @@
 ---
-
-const  {  data } = Astro.props;
-
-
-
+const { data } = Astro.props;
 ---
+
 <div>
-	<h2 class="sr-only">{data?.title?.split("-")[0]}lyrics</h2>
-	<h3 class="sr-only">{data?.title?.split("-")[1]}</h3>
-	<h4 class="sr-only">{data?.title?.split("-")[1]} songs</h4>
-	<h2 class="sr-only">{data?.title?.split("-")[1]} {data?.title?.split("-")[0]} lyrics</h2>
-	<h2 class="sr-only">{data?.title?.split("-")[1]} {data?.title?.split("-")[0]} guitar</h2>
+  <h2 class="sr-only">{data?.title}</h2>
+  <h3 class="sr-only">{data?.title} lyrics</h3>
+  <h4 class="sr-only">{data?.artist} songs</h4>
+  <h2 class="sr-only">
+    {data?.artist}
+    {data?.title} lyrics
+  </h2>
+  <h2 class="sr-only">
+    {data?.title} guitar
+  </h2>
+  <h4 class="sr-only">{data?.artist}</h4>
 </div>
