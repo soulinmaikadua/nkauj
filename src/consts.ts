@@ -249,4 +249,9 @@ export const ARTISTS = [
     value: "2-siab",
     description: "2 Siab lyrics",
   },
+  {
+    name: "Kim Muas",
+    value: "kim-muas",
+    description: "Kim Muas lyrics",
+  },
 ];
