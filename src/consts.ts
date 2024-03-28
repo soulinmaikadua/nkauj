@@ -274,4 +274,14 @@ export const ARTISTS = [
     value: "duab-ci-thoj",
     description: "Duab Ci Thoj lyrics",
   },
+  {
+    name: "DeathRyhme",
+    value: "deathryhme",
+    description: "DeathRyhme lyrics",
+  },
+  {
+    name: "Ntxawg Lis",
+    value: "ntxawg-lis",
+    description: "Ntxawg Lis lyrics",
+  },
 ];
