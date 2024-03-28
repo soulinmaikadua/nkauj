@@ -24,23 +24,25 @@ const singer = ARTISTS.find((el: any) => el.value === "kub-qav-kaws-vaj");
     <Header />
     <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
       <section>
-        {
-          posts.map((post: any) => (
-            <div class="border-b mb-2">
-              <a
-                href={`/kub-qav-kaws-vaj/${post.slug}/`}
-                class="shadow-md rounded shadow-orange-300 hover:shadow-orange-600"
-              >
-                <h4 class="text-2xl">{post.data.title}</h4>
-              </a>
-              <p class="text-sm">
-                <time datetime={post.data.pubDate}>
-                  {dateFormat(post.data.pubDate)}
-                </time>
-              </p>
-            </div>
-          ))
-        }
+        <ul>
+          {
+            posts.map((post: any) => (
+              <li class="border-b pb-2 my-2">
+                <a
+                  href={`/kub-qav-kaws-vaj/${post.slug}/`}
+                  class="hover:underline"
+                >
+                  <h4 class="text-md md:text-2xl">{post.data.title}</h4>
+                </a>
+                <p class="text-sm">
+                  <time datetime={post.data.pubDate}>
+                    {dateFormat(post.data.pubDate)}
+                  </time>
+                </p>
+              </li>
+            ))
+          }
+        </ul>
       </section>
     </main>
     <Footer />

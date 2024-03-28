@@ -254,4 +254,24 @@ export const ARTISTS = [
     value: "kim-muas",
     description: "Kim Muas lyrics",
   },
+  {
+    name: "Lis Yaj Pov",
+    value: "lis-yaj-pov",
+    description: "Lis Yaj Pov lyrics",
+  },
+  {
+    name: "ArJan Lis Pov",
+    value: "lis-pov",
+    description: "ArJan Lis Pov lyrics",
+  },
+  {
+    name: "Dib Xwb",
+    value: "dib-xwb",
+    description: "Dib Xwb lyrics",
+  },
+  {
+    name: "Duab Ci Thoj",
+    value: "duab-ci-thoj",
+    description: "Duab Ci Thoj lyrics",
+  },
 ];
