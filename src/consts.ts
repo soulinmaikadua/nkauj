@@ -249,4 +249,14 @@ export const ARTISTS = [
     value: "2-siab",
     description: "2 Siab lyrics",
   },
+  {
+    name: "Lis Yaj Pov",
+    value: "lis-yaj-pov",
+    description: "Lis Yaj Pov lyrics",
+  },
+  {
+    name: "ArJan Lis Pov",
+    value: "lis-pov",
+    description: "ArJan Lis Pov lyrics",
+  },
 ];
