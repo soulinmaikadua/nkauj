@@ -318,4 +318,9 @@ export const ARTISTS = [
     value: "wm-vaj",
     description: "Wm Vaj lyrics",
   },
+  {
+    name: "Paj Zaub Thoj",
+    value: "paj-zaub-thoj",
+    description: "Paj Zaub Thoj lyrics",
+  },
 ];
