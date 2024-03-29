@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { SITE_TITLE } from "../consts";
 
 type Props = CollectionEntry<"nkauj">["data"];
 
@@ -21,7 +22,10 @@ const formattedDate = date.toLocaleDateString("en-US", {
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={`${title} ${artist} - ${SITE_TITLE} Hmoob`}
+      description={description}
+    />
   </head>
 
   <body>

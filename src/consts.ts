@@ -1,6 +1,5 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
-
 export const SITE_TITLE = "Nkauj";
 export const SITE_DESCRIPTION = "Nkauj hmoob zoo siab txhais tos!";
 export const ARTISTS = [
@@ -308,5 +307,10 @@ export const ARTISTS = [
     name: "Pagnia Xiong",
     value: "pagnia-xiong",
     description: "Pagnia Xiong lyrics",
+  },
+  {
+    name: "Lue Vang",
+    value: "lue-vang",
+    description: "Lue Vang lyrics",
   },
 ];
