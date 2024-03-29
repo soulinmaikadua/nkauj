@@ -313,4 +313,9 @@ export const ARTISTS = [
     value: "lue-vang",
     description: "Lue Vang lyrics",
   },
+  {
+    name: "Wm Vaj",
+    value: "wm-vaj",
+    description: "Wm Vaj lyrics",
+  },
 ];
