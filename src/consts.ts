@@ -299,4 +299,14 @@ export const ARTISTS = [
     value: "mab-sua-lis",
     description: "Mab Sua Lis lyrics",
   },
+  {
+    name: "Nkauj Noog Hawj",
+    value: "nkauj-noog-hawj",
+    description: "Nkauj Noog Hawj lyrics",
+  },
+  {
+    name: "Pagnia Xiong",
+    value: "pagnia-xiong",
+    description: "Pagnia Xiong lyrics",
+  },
 ];
