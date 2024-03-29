@@ -274,4 +274,39 @@ export const ARTISTS = [
     value: "duab-ci-thoj",
     description: "Duab Ci Thoj lyrics",
   },
+  {
+    name: "DeathRyhme",
+    value: "deathryhme",
+    description: "DeathRyhme lyrics",
+  },
+  {
+    name: "Ntxawg Lis",
+    value: "ntxawg-lis",
+    description: "Ntxawg Lis lyrics",
+  },
+  {
+    name: "Xanakee",
+    value: "xanakee",
+    description: "Xanakee lyrics",
+  },
+  {
+    name: "Koob Tsheej Xyooj",
+    value: "koob-tsheej-xyooj",
+    description: "Koob Tsheej Xyooj lyrics",
+  },
+  {
+    name: "Mab Sua Lis",
+    value: "mab-sua-lis",
+    description: "Mab Sua Lis lyrics",
+  },
+  {
+    name: "Nkauj Noog Hawj",
+    value: "nkauj-noog-hawj",
+    description: "Nkauj Noog Hawj lyrics",
+  },
+  {
+    name: "Pagnia Xiong",
+    value: "pagnia-xiong",
+    description: "Pagnia Xiong lyrics",
+  },
 ];
