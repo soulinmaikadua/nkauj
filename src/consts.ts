@@ -284,4 +284,19 @@ export const ARTISTS = [
     value: "ntxawg-lis",
     description: "Ntxawg Lis lyrics",
   },
+  {
+    name: "Xanakee",
+    value: "xanakee",
+    description: "Xanakee lyrics",
+  },
+  {
+    name: "Koob Tsheej Xyooj",
+    value: "koob-tsheej-xyooj",
+    description: "Koob Tsheej Xyooj lyrics",
+  },
+  {
+    name: "Mab Sua Lis",
+    value: "mab-sua-lis",
+    description: "Mab Sua Lis lyrics",
+  },
 ];
