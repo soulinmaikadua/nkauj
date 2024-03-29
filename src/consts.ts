@@ -323,4 +323,9 @@ export const ARTISTS = [
     value: "paj-zaub-thoj",
     description: "Paj Zaub Thoj lyrics",
   },
+  {
+    name: "Koos Vaj",
+    value: "koos-vaj",
+    description: "Koos Vaj lyrics",
+  },
 ];
