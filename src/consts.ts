@@ -343,4 +343,9 @@ export const ARTISTS = [
     value: "beer-yang",
     description: "Beer Yang (Neeb Yaj) lyrics",
   },
+  {
+    name: "Xai Thao",
+    value: "xai-thao",
+    description: "Xai Thao lyrics",
+  },
 ];
