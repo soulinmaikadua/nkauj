@@ -308,4 +308,9 @@ export const ARTISTS = [
     value: "pagnia-xiong",
     description: "Pagnia Xiong lyrics",
   },
+  {
+    name: "Lue Vang",
+    value: "lue-vang",
+    description: "Lue Vang lyrics",
+  },
 ];
