@@ -348,4 +348,9 @@ export const ARTISTS = [
     value: "xai-thao",
     description: "Xai Thao lyrics",
   },
+  {
+    name: "Neng Vang",
+    value: "neng-vang",
+    description: "Neng Vang lyrics",
+  },
 ];
