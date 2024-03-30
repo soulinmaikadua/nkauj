@@ -323,4 +323,29 @@ export const ARTISTS = [
     value: "paj-zaub-thoj",
     description: "Paj Zaub Thoj lyrics",
   },
+  {
+    name: "Koos Vaj",
+    value: "koos-vaj",
+    description: "Koos Vaj lyrics",
+  },
+  {
+    name: "Loky Thor",
+    value: "loky-thor",
+    description: "Loky Thor lyrics",
+  },
+  {
+    name: "Mana Xiong",
+    value: "mana-xiong",
+    description: "Mana Xiong lyrics",
+  },
+  {
+    name: "Beer Yang (Neeb Yaj)",
+    value: "beer-yang",
+    description: "Beer Yang (Neeb Yaj) lyrics",
+  },
+  {
+    name: "Xai Thao",
+    value: "xai-thao",
+    description: "Xai Thao lyrics",
+  },
 ];
