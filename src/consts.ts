@@ -358,4 +358,19 @@ export const ARTISTS = [
     value: "laj-tsawb",
     description: "Laj Tsawb lyrics",
   },
+  {
+    name: "Yaya Moua & Yaying Yeng Moua",
+    value: "yaya-yaying-yeng-moua",
+    description: "Yaya Moua & Yaying Yeng Moua lyrics",
+  },
+  {
+    name: "Neng Yang",
+    value: "neng-yang",
+    description: "Neng Yang lyrics",
+  },
+  {
+    name: "Ntso Na",
+    value: "ntso-na",
+    description: "Ntso Na lyrics",
+  },
 ];
