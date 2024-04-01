@@ -383,4 +383,14 @@ export const ARTISTS = [
     value: "npawg-lem",
     description: "Npawg Lem lyrics",
   },
+  {
+    name: "Ya Xiong",
+    value: "ya-xiong",
+    description: "Ya Xiong lyrics",
+  },
+  {
+    name: "Hav Iav Bank",
+    value: "hav-iav",
+    description: "Hav Iav Bank lyrics",
+  },
 ];
