@@ -378,4 +378,9 @@ export const ARTISTS = [
     value: "nujsua-spx",
     description: "Nuj Sua SPX lyrics",
   },
+  {
+    name: "Npawg Lem",
+    value: "npawg-lem",
+    description: "Npawg Lem lyrics",
+  },
 ];
