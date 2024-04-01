@@ -373,4 +373,9 @@ export const ARTISTS = [
     value: "ntso-na",
     description: "Ntso Na lyrics",
   },
+  {
+    name: "Nuj Sua SPX",
+    value: "nujsua-spx",
+    description: "Nuj Sua SPX lyrics",
+  },
 ];
