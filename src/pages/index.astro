@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
+const today = new Date();
 ---
 
 <!doctype html>
@@ -21,6 +22,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
         <h1 class="text-3xl">Nkauj.com Zoo siab txhais tos</h1>
       </div>
       <p>Cov npe tub txhais hu nkauj</p>
+      <h1 class="sr-only">nkauj hmoob</h1>
+      <h2 class="sr-only">Nkauj hmoob kho siab</h2>
+      <h3 class="sr-only">Nkauj tawm tshiab {today.getFullYear()}</h3>
+      <h4 class="sr-only">Nkauj hmoob toj siab</h4>
+      <h5 class="sr-only">Nkauj hmoob zoo nkauj</h5>
+      <h6 class="sr-only">Nkauj kho siab</h6>
       <p>🎤🪈🎸</p>
       <div>
         {
