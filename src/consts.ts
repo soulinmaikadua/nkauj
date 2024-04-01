@@ -348,4 +348,39 @@ export const ARTISTS = [
     value: "xai-thao",
     description: "Xai Thao lyrics",
   },
+  {
+    name: "Neng Vang",
+    value: "neng-vang",
+    description: "Neng Vang lyrics",
+  },
+  {
+    name: "Laj Tsawb",
+    value: "laj-tsawb",
+    description: "Laj Tsawb lyrics",
+  },
+  {
+    name: "Yaya Moua & Yaying Yeng Moua",
+    value: "yaya-yaying-yeng-moua",
+    description: "Yaya Moua & Yaying Yeng Moua lyrics",
+  },
+  {
+    name: "Neng Yang",
+    value: "neng-yang",
+    description: "Neng Yang lyrics",
+  },
+  {
+    name: "Ntso Na",
+    value: "ntso-na",
+    description: "Ntso Na lyrics",
+  },
+  {
+    name: "Nuj Sua SPX",
+    value: "nujsua-spx",
+    description: "Nuj Sua SPX lyrics",
+  },
+  {
+    name: "Npawg Lem",
+    value: "npawg-lem",
+    description: "Npawg Lem lyrics",
+  },
 ];
