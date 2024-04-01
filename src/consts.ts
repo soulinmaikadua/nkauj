@@ -353,4 +353,9 @@ export const ARTISTS = [
     value: "neng-vang",
     description: "Neng Vang lyrics",
   },
+  {
+    name: "Laj Tsawb",
+    value: "laj-tsawb",
+    description: "Laj Tsawb lyrics",
+  },
 ];
