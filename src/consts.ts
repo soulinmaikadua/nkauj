@@ -403,4 +403,14 @@ export const ARTISTS = [
     value: "tub-lis",
     description: "Tub Lis lyrics",
   },
+  {
+    name: "Wave Vang",
+    value: "wave-vang",
+    description: "Wave Vang lyrics",
+  },
+  {
+    name: "Kong Chue",
+    value: "kong-chue",
+    description: "Kong Chue lyrics",
+  },
 ];
