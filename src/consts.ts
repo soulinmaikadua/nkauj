@@ -413,4 +413,9 @@ export const ARTISTS = [
     value: "kong-chue",
     description: "Kong Chue lyrics",
   },
+  {
+    name: "Huab Vwj",
+    value: "huab-vwj",
+    description: "Huab Vwj lyrics",
+  },
 ];
