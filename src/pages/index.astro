@@ -14,7 +14,7 @@ const today = new Date();
       description={SITE_DESCRIPTION}
     />
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-red-50 via-red-200 to-yellow-50">
     <Header />
     <main class="max-w-6xl mx-auto px-4 text-center">
       <h1 class="text-center my-32">🧑🏽‍💻</h1>
@@ -29,13 +29,19 @@ const today = new Date();
       <h5 class="sr-only">Nkauj hmoob zoo nkauj</h5>
       <h6 class="sr-only">Nkauj kho siab</h6>
       <p>🎤🪈🎸</p>
+      <!-- <button class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 mt-3 rounded-full">
+                  // {artist.name}
+                  //{" "}
+                </button> -->
       <div>
         {
           ARTISTS.map((artist) => {
             return (
               <a href={`/${artist.value}`}>
-                <button class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 mt-3 rounded-full">
-                  {artist.name}
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200  focus:ring-4 focus:outline-none focus:ring-red-100">
+                  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    {artist.name}
+                  </span>
                 </button>
               </a>
             );
