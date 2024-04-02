@@ -389,8 +389,18 @@ export const ARTISTS = [
     description: "Ya Xiong lyrics",
   },
   {
-    name: "Hav Iav Bank",
+    name: "Hav Iav Band",
     value: "hav-iav",
-    description: "Hav Iav Bank lyrics",
+    description: "Hav Iav Band lyrics",
+  },
+  {
+    name: "Nikki Thao",
+    value: "nikki-thao",
+    description: "Nikki Thao lyrics",
+  },
+  {
+    name: "Tub Lis",
+    value: "tub-lis",
+    description: "Tub Lis lyrics",
   },
 ];
