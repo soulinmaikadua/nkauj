@@ -33,20 +33,13 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <Header />
     <main class="max-w-6xl mx-auto px-4">
       <article>
-        <div class="flex justify-start pb-3 mb-5 border-b">
-          <div
-            class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
-          >
-            <img src={heroImage} class="rounded-md" />
-          </div>
-          <div class="ml-5">
-            <h1 class="text-3xl font-bold">{title}</h1>
+          <div class="mb-5">
             <p>{artist}</p>
+            <h1 class="text-3xl font-bold">{title}</h1>
             <p class="text-sm">
               <time datetime={pubDate}>{formattedDate}</time>
             </p>
           </div>
-        </div>
         <slot />
       </article>
     </main>
