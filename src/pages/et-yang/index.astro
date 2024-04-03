@@ -16,12 +16,18 @@ const singer = ARTISTS.find((el: any) => el.value === "et-yang");
   <head>
     <BaseHead
       title={singer?.name || SITE_TITLE}
+      image={posts[0]?.data?.heroImage}
       description={singer?.description || SITE_DESCRIPTION}
     />
   </head>
   <body>
     <Header />
     <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
+      <div
+        class="max-w-32 max-h-32 mb-2 rounded-md shadow-lg bg-white shadow-red-100"
+      >
+        <img src={posts[0]?.data?.heroImage} class="rounded-md" />
+      </div>
       <h1 class="text-xl md:text-3xl font-bold">ET Yang</h1>
       <h2 class="sr-only">ET Yang Songs</h2>
       <div class="border-b"></div>

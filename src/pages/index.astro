@@ -4,6 +4,19 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
 const today = new Date();
+ARTISTS.sort((a: any, b: any) => {
+  // Convert names to lowercase for case-insensitive sorting
+  const nameA = a.name.toLowerCase();
+  const nameB = b.name.toLowerCase();
+
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
+});
 ---
 
 <!doctype html>
@@ -29,10 +42,6 @@ const today = new Date();
       <h5 class="sr-only">Nkauj hmoob zoo nkauj</h5>
       <h6 class="sr-only">Nkauj kho siab</h6>
       <p>🎤🪈🎸</p>
-      <!-- <button class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 mt-3 rounded-full">
-                  // {artist.name}
-                  //{" "}
-                </button> -->
       <div>
         {
           ARTISTS.map((artist) => {
