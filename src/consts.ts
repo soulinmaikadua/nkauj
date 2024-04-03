@@ -418,4 +418,24 @@ export const ARTISTS = [
     value: "huab-vwj",
     description: "Huab Vwj lyrics",
   },
+  {
+    name: "Bee Vang",
+    value: "bee-vang",
+    description: "Bee Vang lyrics",
+  },
+  {
+    name: "Dawb Thoj",
+    value: "dawb-thoj",
+    description: "Dawb Thoj lyrics",
+  },
+  {
+    name: "Mai Neng Thao",
+    value: "mai-neng-thao",
+    description: "Mai Neng Thao lyrics",
+  },
+  {
+    name: "Maiv Lis Thoj",
+    value: "maiv-lis-thoj",
+    description: "Maiv Lis Thoj lyrics",
+  },
 ];
