@@ -1,56 +1,8 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../../consts";
-import { dateFormat } from "../../utils";
-import { getCollection } from "astro:content";
-
-const posts = (await getCollection("ariya")).sort(
-  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
-const singer = ARTISTS.find((el: any) => el.value === "ariya");
+import BaseBody from "../../components/BaseBody.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead
-      title={singer?.name || SITE_TITLE}
-      image={posts[0]?.data?.heroImage}
-      description={singer?.description || SITE_DESCRIPTION}
-    />
-  </head>
-  <body>
-    <Header />
-    <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
-      <div
-        class="max-w-32 max-h-32 mb-2 rounded-md shadow-lg bg-white shadow-red-100"
-      >
-        <img src={posts[0]?.data.heroImage} class="rounded-md" />
-      </div>
-      <h1 class="text-xl md:text-3xl font-bold">Ariya</h1>
-      <h2 class="sr-only">Ariya Songs</h2>
-      <div class="border-b"></div>
-      <section>
-        <ul>
-          {
-            posts.map((post: any) => (
-              <li class="border-b pb-2 my-2">
-                <a href={`/ariya/${post.slug}/`} class="hover:underline">
-                  <h4 class="text-md md:text-2xl">{post.data.title}</h4>
-                </a>
-                <p class="text-sm">
-                  <time datetime={post.data.pubDate}>
-                    {dateFormat(post.data.pubDate)}
-                  </time>
-                </p>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-    <Footer />
-  </body>
+  <BaseBody name="ariya" />
 </html>
