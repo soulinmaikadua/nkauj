@@ -8,7 +8,6 @@ import { SITE_TITLE } from "../consts";
 type Props = CollectionEntry<"nkauj">["data"];
 
 const { title, description, artist, pubDate } = Astro.props;
-
 // Parse the date string
 const date = new Date(pubDate);
 
@@ -25,7 +24,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <BaseHead
       title={`${title} ${artist} - ${SITE_TITLE} Hmoob`}
       description={description}
-      image="/paj-huam/paj-huam.jpeg"
+      image="/zaj-tshoob/zaj-tshoob.png"
     />
   </head>
 

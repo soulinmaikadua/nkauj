@@ -1,0 +1,50 @@
+---
+import BaseHead from "./BaseHead.astro";
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
+import { getCollection } from "astro:content";
+import { dateFormat } from "../utils";
+const posts = (await getCollection("paj-huam")).sort(
+  (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const singer = ARTISTS.find((el: any) => el.value === "paj-huam");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={singer?.name || SITE_TITLE}
+      image="/paj-huam/paj-huam.jpeg"
+      description={singer?.description || SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
+      <h1 class="text-xl md:text-3xl font-bold">Paj Huam</h1>
+      <h2 class="sr-only">Paj Huam Hmoob</h2>
+      <div class="border-b"></div>
+      <section>
+        <ul>
+          {
+            posts.map((post: any) => (
+              <li class="border-b pb-2 my-2">
+                <a href={`/paj-huam/${post.slug}/`} class="hover:underline">
+                  <h4 class="text-md md:text-2xl">{post.data.title}</h4>
+                </a>
+                <p class="text-sm">
+                  <time datetime={post.data.pubDate}>
+                    {dateFormat(post.data.pubDate)}
+                  </time>
+                </p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
