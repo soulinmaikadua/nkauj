@@ -15,7 +15,13 @@ export default defineConfig({
 	// adapter: vercel(),
 	integrations: [
 		mdx(),
-		sitemap(),
+		sitemap(
+			{
+				changefreq: 'daily',
+				priority: 1,
+				lastmod: new Date("2024/04-04")
+			}
+		),
 		tailwind(),
 		partytown({
 			config: {
