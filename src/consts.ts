@@ -448,4 +448,29 @@ export const ARTISTS = [
     value: "ntxawg-hawj",
     description: "Ntxawg Hawj lyrics",
   },
+  {
+    name: "Paj Huab Ham",
+    value: "paj-huab-ham",
+    description: "Paj Huab Ham lyrics",
+  },
+  {
+    name: "Paj Muas",
+    value: "paj-muas",
+    description: "Paj Muas lyrics",
+  },
+  {
+    name: "Paj Suab Yaj",
+    value: "paj-suab-yaj",
+    description: "Paj Suab Yaj lyrics",
+  },
+  {
+    name: "Suab Nag Yaj",
+    value: "suab-nag-yaj",
+    description: "Suab Nag Yaj lyrics",
+  },
+  {
+    name: "Tub Lis VamKhwb",
+    value: "tub-lis-vam-khwb",
+    description: "Tub Lis VamKhwb lyrics",
+  },
 ];
