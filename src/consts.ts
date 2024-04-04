@@ -473,4 +473,9 @@ export const ARTISTS = [
     value: "tub-lis-vam-khwb",
     description: "Tub Lis VamKhwb lyrics",
   },
+  {
+    name: "Ntxhuav Yaj",
+    value: "ntxhuav-yaj",
+    description: "Ntxhuav Yaj lyrics",
+  },
 ];
