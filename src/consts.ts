@@ -438,4 +438,14 @@ export const ARTISTS = [
     value: "maiv-lis-thoj",
     description: "Maiv Lis Thoj lyrics",
   },
+  {
+    name: "Ntxawm Lis",
+    value: "ntxawm-lis",
+    description: "Ntxawm Lis lyrics",
+  },
+  {
+    name: "Ntxawg Hawj",
+    value: "ntxawg-hawj",
+    description: "Ntxawg Hawj lyrics",
+  },
 ];
