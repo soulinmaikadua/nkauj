@@ -478,4 +478,29 @@ export const ARTISTS = [
     value: "ntxhuav-yaj",
     description: "Ntxhuav Yaj lyrics",
   },
+  {
+    name: "Paj Ntshua Nplaim",
+    value: "paj-ntshua-nplaim",
+    description: "Paj Ntshua Nplaim lyrics",
+  },
+  {
+    name: "Maiv Ntxhais Lauj",
+    value: "maiv-ntxhais-lauj",
+    description: "Maiv Ntxhais Lauj lyrics",
+  },
+  {
+    name: "Teem Xyooj",
+    value: "teem-xyooj",
+    description: "Teem Xyooj lyrics",
+  },
+  {
+    name: "Ntxheb Vaj",
+    value: "ntxheb-vaj",
+    description: "Ntxheb Vaj lyrics",
+  },
+  {
+    name: "Hwm Lauj",
+    value: "hwm-lauj",
+    description: "Hwm Lauj lyrics",
+  },
 ];
