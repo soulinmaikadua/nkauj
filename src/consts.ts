@@ -329,9 +329,9 @@ export const ARTISTS = [
     description: "Koos Vaj lyrics",
   },
   {
-    name: "Loky Thor",
+    name: "Loky Thao",
     value: "loky-thor",
-    description: "Loky Thor lyrics",
+    description: "Loky Thao lyrics",
   },
   {
     name: "Mana Xiong",
