@@ -3,6 +3,8 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import BlogNkauj from "../../layouts/BlogNkauj.astro";
 import RelatedSong from "../../components/RelatedSong.astro";
 import ServerRenderOnly from "../../components/ServerRenderOnly.astro";
+import GoogleAds from "../../components/GoogleAds.astro";
+import MultiAds from "../../components/MultiAds.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("2-siab");
@@ -19,6 +21,14 @@ const { Content } = await post.render();
 
 <BlogNkauj {...post.data}>
   <ServerRenderOnly data={post.data} />
-  <Content />
+  <div class="grid grid-cols-1 md:grid-cols-4">
+    <div class="col-span-3">
+      <Content />
+    </div>
+    <div>
+      <MultiAds />
+    </div>
+  </div>
+  <GoogleAds />
   <RelatedSong name="2-siab" />
 </BlogNkauj>

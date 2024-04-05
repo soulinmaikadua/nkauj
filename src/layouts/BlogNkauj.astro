@@ -7,8 +7,8 @@ import { SITE_TITLE } from "../consts";
 
 type Props = CollectionEntry<"nkauj">["data"];
 
-const { title, description, artist, pubDate } = Astro.props;
-
+const { title, description, artist, heroImage, pubDate } = Astro.props;
+// const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // Parse the date string
 const date = new Date(pubDate);
 
@@ -25,6 +25,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <BaseHead
       title={`${title} ${artist} - ${SITE_TITLE} Hmoob`}
       description={description}
+      image={heroImage}
     />
   </head>
 
@@ -32,13 +33,19 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <Header />
     <main class="max-w-6xl mx-auto px-4">
       <article>
-        <div>
-          <p>{artist}</p>
-          <h1 class="text-3xl font-bold">{title}</h1>
-          <p class="text-sm">
-            <time datetime={pubDate}>{formattedDate}</time>
-          </p>
-          <hr class="my-2" />
+        <div class="flex justify-start pb-3 mb-5 border-b">
+          <div
+            class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
+          >
+            <img src={heroImage} alt={title} class="rounded-md" />
+          </div>
+          <div class="ml-5">
+            <h1 class="text-3xl font-bold">{title}</h1>
+            <p>{artist}</p>
+            <p class="text-sm">
+              <time datetime={pubDate}>{formattedDate}</time>
+            </p>
+          </div>
         </div>
         <slot />
       </article>

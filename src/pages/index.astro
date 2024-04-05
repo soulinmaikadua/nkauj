@@ -3,6 +3,20 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
+const today = new Date();
+ARTISTS.sort((a: any, b: any) => {
+  // Convert names to lowercase for case-insensitive sorting
+  const nameA = a.name.toLowerCase();
+  const nameB = b.name.toLowerCase();
+
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
+});
 ---
 
 <!doctype html>
@@ -13,7 +27,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
       description={SITE_DESCRIPTION}
     />
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-red-50 via-red-200 to-yellow-50">
     <Header />
     <main class="max-w-6xl mx-auto px-4 text-center">
       <h1 class="text-center my-32">🧑🏽‍💻</h1>
@@ -21,14 +35,22 @@ import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
         <h1 class="text-3xl">Nkauj.com Zoo siab txhais tos</h1>
       </div>
       <p>Cov npe tub txhais hu nkauj</p>
+      <h1 class="sr-only">nkauj hmoob</h1>
+      <h2 class="sr-only">Nkauj hmoob kho siab</h2>
+      <h3 class="sr-only">Nkauj tawm tshiab {today.getFullYear()}</h3>
+      <h4 class="sr-only">Nkauj hmoob toj siab</h4>
+      <h5 class="sr-only">Nkauj hmoob zoo nkauj</h5>
+      <h6 class="sr-only">Nkauj kho siab</h6>
       <p>🎤🪈🎸</p>
-      <div>
+      <div class="mt-5">
         {
           ARTISTS.map((artist) => {
             return (
               <a href={`/${artist.value}`}>
-                <button class="bg-gray-200 mx-1 hover:bg-gray-300 px-4 py-2 mt-3 rounded-full">
-                  {artist.name}
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200  focus:ring-4 focus:outline-none focus:ring-red-100">
+                  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
+                    {artist.name}
+                  </span>
                 </button>
               </a>
             );

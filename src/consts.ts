@@ -383,4 +383,124 @@ export const ARTISTS = [
     value: "npawg-lem",
     description: "Npawg Lem lyrics",
   },
+  {
+    name: "Ya Xiong",
+    value: "ya-xiong",
+    description: "Ya Xiong lyrics",
+  },
+  {
+    name: "Hav Iav Band",
+    value: "hav-iav",
+    description: "Hav Iav Band lyrics",
+  },
+  {
+    name: "Nikki Thao",
+    value: "nikki-thao",
+    description: "Nikki Thao lyrics",
+  },
+  {
+    name: "Tub Lis",
+    value: "tub-lis",
+    description: "Tub Lis lyrics",
+  },
+  {
+    name: "Wave Vang",
+    value: "wave-vang",
+    description: "Wave Vang lyrics",
+  },
+  {
+    name: "Kong Chue",
+    value: "kong-chue",
+    description: "Kong Chue lyrics",
+  },
+  {
+    name: "Huab Vwj",
+    value: "huab-vwj",
+    description: "Huab Vwj lyrics",
+  },
+  {
+    name: "Bee Vang",
+    value: "bee-vang",
+    description: "Bee Vang lyrics",
+  },
+  {
+    name: "Dawb Thoj",
+    value: "dawb-thoj",
+    description: "Dawb Thoj lyrics",
+  },
+  {
+    name: "Mai Neng Thao",
+    value: "mai-neng-thao",
+    description: "Mai Neng Thao lyrics",
+  },
+  {
+    name: "Maiv Lis Thoj",
+    value: "maiv-lis-thoj",
+    description: "Maiv Lis Thoj lyrics",
+  },
+  {
+    name: "Ntxawm Lis",
+    value: "ntxawm-lis",
+    description: "Ntxawm Lis lyrics",
+  },
+  {
+    name: "Ntxawg Hawj",
+    value: "ntxawg-hawj",
+    description: "Ntxawg Hawj lyrics",
+  },
+  {
+    name: "Paj Huab Ham",
+    value: "paj-huab-ham",
+    description: "Paj Huab Ham lyrics",
+  },
+  {
+    name: "Paj Muas",
+    value: "paj-muas",
+    description: "Paj Muas lyrics",
+  },
+  {
+    name: "Paj Suab Yaj",
+    value: "paj-suab-yaj",
+    description: "Paj Suab Yaj lyrics",
+  },
+  {
+    name: "Suab Nag Yaj",
+    value: "suab-nag-yaj",
+    description: "Suab Nag Yaj lyrics",
+  },
+  {
+    name: "Tub Lis VamKhwb",
+    value: "tub-lis-vam-khwb",
+    description: "Tub Lis VamKhwb lyrics",
+  },
+  {
+    name: "Ntxhuav Yaj",
+    value: "ntxhuav-yaj",
+    description: "Ntxhuav Yaj lyrics",
+  },
+  {
+    name: "Paj Ntshua Nplaim",
+    value: "paj-ntshua-nplaim",
+    description: "Paj Ntshua Nplaim lyrics",
+  },
+  {
+    name: "Maiv Ntxhais Lauj",
+    value: "maiv-ntxhais-lauj",
+    description: "Maiv Ntxhais Lauj lyrics",
+  },
+  {
+    name: "Teem Xyooj",
+    value: "teem-xyooj",
+    description: "Teem Xyooj lyrics",
+  },
+  {
+    name: "Ntxheb Vaj",
+    value: "ntxheb-vaj",
+    description: "Ntxheb Vaj lyrics",
+  },
+  {
+    name: "Hwm Lauj",
+    value: "hwm-lauj",
+    description: "Hwm Lauj lyrics",
+  },
 ];
