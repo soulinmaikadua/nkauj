@@ -503,4 +503,9 @@ export const ARTISTS = [
     value: "hwm-lauj",
     description: "Hwm Lauj lyrics",
   },
+  {
+    name: "Meena Thao",
+    value: "meena-thao",
+    description: "Meena Thao lyrics",
+  },
 ];
