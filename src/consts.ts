@@ -513,4 +513,14 @@ export const ARTISTS = [
     value: "kwm-lis",
     description: "Kwm Lis lyrics",
   },
+  {
+    name: "Mas Lis Yaj",
+    value: "mas-lis-yaj",
+    description: "Mas Lis Yaj lyrics",
+  },
+  {
+    name: "Paj Nyiag Vaj",
+    value: "paj-nyiag-vaj",
+    description: "Paj Nyiag Vaj lyrics",
+  },
 ];
