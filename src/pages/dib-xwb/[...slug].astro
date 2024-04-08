@@ -1,8 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogNkauj from "../../layouts/BlogNkauj.astro";
-import RelatedSong from "../../components/RelatedSong.astro";
-import ServerRenderOnly from "../../components/ServerRenderOnly.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("dib-xwb");
@@ -15,10 +13,12 @@ type Props = CollectionEntry<"dib-xwb">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "dib-xwb",
+};
 ---
 
-<BlogNkauj {...post.data}>
-  <ServerRenderOnly data={post.data} />
+<BlogNkauj {...newProps}>
   <Content />
-  <RelatedSong name="dib-xwb" />
 </BlogNkauj>

@@ -1,8 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import PajHuam from "../../layouts/PajHuam.astro";
-import RelatedSong from "../../components/RelatedSong.astro";
-import ServerRenderOnly from "../../components/ServerRenderOnly.astro";
+import ZajTshoob from "../../components/ZajTshoob.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("zaj-tshoob");
@@ -17,8 +15,6 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<PajHuam {...post.data}>
-  <ServerRenderOnly data={post.data} />
+<ZajTshoob {...post.data}>
   <Content />
-  <RelatedSong name="zaj-tshoob" />
-</PajHuam>
+</ZajTshoob>

@@ -12,15 +12,15 @@ const posts = (await getCollection(name)).filter(
 {
   posts.length > 0 && (
     <>
-      <div class="mt-10">
-        <p>Related song</p>
+      <div class="my-4">
+        <p>RALATED SONG LYRICS</p>
       </div>
       <div class="border-b" />
-      <ul>
+      <ul class="mt-4">
         {posts.map((post: any) => (
           <li class="border-b mb-1 pb-1">
             <a href={`/${name}/${post.slug}/`} class="hover:underline">
-              <h5 class="text-md md:text-2xl">{post.data.title}</h5>
+              <h5 class="text-xl md:text-2xl">{post.data.title}</h5>
             </a>
             <p class="text-sm mt-n4">
               <time datetime={post.data.pubDate}>

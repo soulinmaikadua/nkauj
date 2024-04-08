@@ -2,7 +2,7 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { SITE_TITLE } from "../../consts";
 import { getCollection } from "astro:content";
 import { dateFormat } from "../../utils";
 const posts = (await getCollection("guitar")).sort(
@@ -27,7 +27,7 @@ const posts = (await getCollection("guitar")).sort(
             posts.map((post: any) => (
               <li class="border-b pb-2 my-2">
                 <a href={`/guitar/${post.slug}/`} class="hover:underline">
-                  <h4 class="text-md md:text-2xl">{post.data.title}</h4>
+                  <h4 class="text-xl md:text-2xl">{post.data.title}</h4>
                 </a>
                 <p class="text-sm">
                   <time datetime={post.data.pubDate}>

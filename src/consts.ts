@@ -329,9 +329,9 @@ export const ARTISTS = [
     description: "Koos Vaj lyrics",
   },
   {
-    name: "Loky Thor",
+    name: "Loky Thao",
     value: "loky-thor",
-    description: "Loky Thor lyrics",
+    description: "Loky Thao lyrics",
   },
   {
     name: "Mana Xiong",
@@ -502,5 +502,30 @@ export const ARTISTS = [
     name: "Hwm Lauj",
     value: "hwm-lauj",
     description: "Hwm Lauj lyrics",
+  },
+  {
+    name: "Meena Thao",
+    value: "meena-thao",
+    description: "Meena Thao lyrics",
+  },
+  {
+    name: "Kwm Lis",
+    value: "kwm-lis",
+    description: "Kwm Lis lyrics",
+  },
+  {
+    name: "Mas Lis Yaj",
+    value: "mas-lis-yaj",
+    description: "Mas Lis Yaj lyrics",
+  },
+  {
+    name: "Paj Nyiag Vaj",
+    value: "paj-nyiag-vaj",
+    description: "Paj Nyiag Vaj lyrics",
+  },
+  {
+    name: "Meej Vaj",
+    value: "meej-vaj",
+    description: "Meej Vaj lyrics",
   },
 ];

@@ -42,11 +42,7 @@ const singer = ARTISTS.find((el: any) => el.value === name);
               <a href={`/${name}/${post.slug}/`} class="hover:underline">
                 <h4 class="text-xl md:text-2xl">{post.data.title}</h4>
               </a>
-              <p class="text-sm">
-                <time datetime={post.data.pubDate}>
-                  {dateFormat(post.data.pubDate)}
-                </time>
-              </p>
+              <div class="text-sm">{dateFormat(post.data.pubDate)}</div>
             </li>
           ))
         }

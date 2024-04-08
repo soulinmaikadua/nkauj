@@ -32,7 +32,7 @@ const singer = ARTISTS.find((el: any) => el.value === "zaj-tshoob");
             posts.map((post: any) => (
               <li class="border-b pb-2 my-2">
                 <a href={`/zaj-tshoob/${post.slug}/`} class="hover:underline">
-                  <h4 class="text-md md:text-2xl">{post.data.title}</h4>
+                  <h4 class="text-xl md:text-2xl">{post.data.title}</h4>
                 </a>
                 <p class="text-sm">
                   <time datetime={post.data.pubDate}>

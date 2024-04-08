@@ -1,10 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogNkauj from "../../layouts/BlogNkauj.astro";
-import RelatedSong from "../../components/RelatedSong.astro";
-import ServerRenderOnly from "../../components/ServerRenderOnly.astro";
-import GoogleAds from "../../components/GoogleAds.astro";
-import MultiAds from "../../components/MultiAds.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("2-siab");
@@ -17,18 +13,12 @@ type Props = CollectionEntry<"2-siab">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "2-siab",
+};
 ---
 
-<BlogNkauj {...post.data}>
-  <ServerRenderOnly data={post.data} />
-  <div class="grid grid-cols-1 md:grid-cols-4">
-    <div class="col-span-3">
-      <Content />
-    </div>
-    <div>
-      <MultiAds />
-    </div>
-  </div>
-  <GoogleAds />
-  <RelatedSong name="2-siab" />
+<BlogNkauj {...newProps}>
+  <Content />
 </BlogNkauj>

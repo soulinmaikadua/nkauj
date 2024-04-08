@@ -19,7 +19,7 @@ export default defineConfig({
 			{
 				changefreq: 'daily',
 				priority: 1,
-				lastmod: new Date("2024/04-04")
+				lastmod: new Date()
 			}
 		),
 		tailwind(),
