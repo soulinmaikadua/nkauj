@@ -1,22 +1,24 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogNkauj from '../../layouts/BlogNkauj.astro';
-import RelatedSong from '../../components/RelatedSong.astro';
+import { type CollectionEntry, getCollection } from "astro:content";
+import BlogNkauj from "../../layouts/BlogNkauj.astro";
 export const prerender = true;
 export async function getStaticPaths() {
-	const posts = await getCollection('kub-qav-kaws-vaj');
-	return posts.map((post:any) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts = await getCollection("kub-qav-kaws-vaj");
+  return posts.map((post: any) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
-type Props = CollectionEntry<'kub-qav-kaws-vaj'>;
+type Props = CollectionEntry<"kub-qav-kaws-vaj">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "kub-qav-kaws-vaj",
+};
 ---
 
-<BlogNkauj {...post.data}>
-	<Content />
-	<RelatedSong name="kub-qav-kaws-vaj" />
+<BlogNkauj {...newProps}>
+  <Content />
 </BlogNkauj>

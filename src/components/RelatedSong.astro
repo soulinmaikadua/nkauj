@@ -12,11 +12,11 @@ const posts = (await getCollection(name)).filter(
 {
   posts.length > 0 && (
     <>
-      <div class="mt-10">
-        <p>Related song</p>
+      <div class="my-4">
+        <p>RALATED SONG LYRICS</p>
       </div>
-      <div class="border-b" />
-      <ul>
+      <div class="border-b " />
+      <ul class="mt-4">
         {posts.map((post: any) => (
           <li class="border-b mb-1 pb-1">
             <a href={`/${name}/${post.slug}/`} class="hover:underline">

@@ -1,12 +1,14 @@
 ---
-import Layout from "../layouts/BlogNkauj.astro";
+import Layout from "../layouts/NotFound.astro";
 
 const date = new Date();
 ---
 
 <Layout
   title="404 - Page Not Found"
-  description="Nrhiav tsis pom"
+  description="Page not found"
   pubDate={date}
-  heroImage=""
-/>
+  heroImage="artists/nkauj.png"
+>
+  <div class="max-w-6xl mx-auto px-4 min-h-screen"></div>
+</Layout>
