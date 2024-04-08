@@ -4,9 +4,11 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import ServerRenderOnly from "../components/ServerRenderOnly.astro";
 import RelatedSong from "../components/RelatedSong.astro";
+import RelatedGuitar from "../components/RelatedGuitar.astro";
 // import GoogleAds from "../components/GoogleAds.astro";
 // import MultiAds from "../components/MultiAds.astro";
 import { SITE_TITLE } from "../consts";
+
 interface Props {
   title: string;
   description: string;
@@ -120,7 +122,13 @@ console.log("Date: ", key);
           </a>
         </div>
         <div class="border-b my-4"></div>
-        <RelatedSong name={key} />
+        {
+          key === "guitar" ? (
+            <RelatedGuitar name={key} />
+          ) : (
+            <RelatedSong name={key} />
+          )
+        }
       </article>
     </main>
     <script type="text/javascript">

@@ -12,11 +12,11 @@ const posts = (await getCollection("guitar")).filter(
 {
   posts.length > 0 && (
     <>
-      <div class="mt-10">
-        <p>Related guitar chords</p>
+      <div class="my-4">
+        <p>RALATED GUITAR CHORDS</p>
       </div>
       <div class="border-b" />
-      <ul>
+      <ul class="mt-4">
         {posts.map((post: any) => (
           <li class="border-b mb-1 pb-1">
             <a href={`/guitar/${post.slug}/`} class="hover:underline">
