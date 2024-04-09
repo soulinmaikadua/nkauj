@@ -548,4 +548,19 @@ export const ARTISTS = [
     value: "paj-zaub-lauj",
     description: "Paj Zaub Lauj lyrics",
   },
+  {
+    name: "J Vang",
+    value: "j-vang",
+    description: "J Vang lyrics",
+  },
+  {
+    name: "Maim Lis",
+    value: "maim-lis",
+    description: "Maim Lis lyrics",
+  },
+  {
+    name: "Lily Vang",
+    value: "lily-vang",
+    description: "Lily Vang lyrics",
+  },
 ];
