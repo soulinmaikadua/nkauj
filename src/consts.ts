@@ -533,4 +533,14 @@ export const ARTISTS = [
     value: "nkauj-lig-hawj",
     description: "Nkauj Lig Hawj lyrics",
   },
+  {
+    name: "Nas Las Yaj",
+    value: "nas-las-yaj",
+    description: "Nas Las Yaj lyrics",
+  },
+  {
+    name: "Xyooj Lauj",
+    value: "xyooj-lauj",
+    description: "Xyooj Lauj lyrics",
+  },
 ];
