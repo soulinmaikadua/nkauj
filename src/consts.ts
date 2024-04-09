@@ -528,4 +528,9 @@ export const ARTISTS = [
     value: "meej-vaj",
     description: "Meej Vaj lyrics",
   },
+  {
+    name: "Nkauj Lig Hawj",
+    value: "nkauj-lig-hawj",
+    description: "Nkauj Lig Hawj lyrics",
+  },
 ];
