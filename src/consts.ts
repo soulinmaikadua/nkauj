@@ -568,4 +568,9 @@ export const ARTISTS = [
     value: "muaj-kub-yaj",
     description: "Muaj Kub Yaj lyrics",
   },
+  {
+    name: "Nraug Nas Lis",
+    value: "nraug-nas-lis",
+    description: "Nraug Nas Lis lyrics",
+  },
 ];
