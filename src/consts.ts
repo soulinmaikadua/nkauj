@@ -583,4 +583,14 @@ export const ARTISTS = [
     value: "peev-xwm",
     description: "Peev Xwm lyrics",
   },
+  {
+    name: "Bee Lee",
+    value: "bee-lee",
+    description: "Bee Lee lyrics",
+  },
+  {
+    name: "Ali Chang",
+    value: "ali-chang",
+    description: "Ali Chang lyrics",
+  },
 ];
