@@ -593,4 +593,14 @@ export const ARTISTS = [
     value: "ali-chang",
     description: "Ali Chang lyrics",
   },
+  {
+    name: "Kub Yaj",
+    value: "kub-yaj",
+    description: "Kub Yaj lyrics",
+  },
+  {
+    name: "Lab Thoj",
+    value: "lab-thoj",
+    description: "Lab Thoj lyrics",
+  },
 ];
