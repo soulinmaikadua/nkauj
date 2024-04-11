@@ -563,4 +563,24 @@ export const ARTISTS = [
     value: "lily-vang",
     description: "Lily Vang lyrics",
   },
+  {
+    name: "Muaj Kub Yaj",
+    value: "muaj-kub-yaj",
+    description: "Muaj Kub Yaj lyrics",
+  },
+  {
+    name: "Nraug Nas Lis",
+    value: "nraug-nas-lis",
+    description: "Nraug Nas Lis lyrics",
+  },
+  {
+    name: "Nkauj Hli Vwj",
+    value: "nkauj-hli-vwj",
+    description: "Nkauj Hli Vwj lyrics",
+  },
+  {
+    name: "Peev Xwm",
+    value: "peev-xwm",
+    description: "Peev Xwm lyrics",
+  },
 ];
