@@ -563,4 +563,9 @@ export const ARTISTS = [
     value: "lily-vang",
     description: "Lily Vang lyrics",
   },
+  {
+    name: "Muaj Kub Yaj",
+    value: "muaj-kub-yaj",
+    description: "Muaj Kub Yaj lyrics",
+  },
 ];
