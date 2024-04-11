@@ -573,4 +573,14 @@ export const ARTISTS = [
     value: "nraug-nas-lis",
     description: "Nraug Nas Lis lyrics",
   },
+  {
+    name: "Nkauj Hli Vwj",
+    value: "nkauj-hli-vwj",
+    description: "Nkauj Hli Vwj lyrics",
+  },
+  {
+    name: "Peev Xwm",
+    value: "peev-xwm",
+    description: "Peev Xwm lyrics",
+  },
 ];
