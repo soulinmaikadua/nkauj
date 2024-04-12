@@ -603,4 +603,14 @@ export const ARTISTS = [
     value: "lab-thoj",
     description: "Lab Thoj lyrics",
   },
+  {
+    name: "Sua Ham",
+    value: "sua-ham",
+    description: "Sua Ham lyrics",
+  },
+  {
+    name: "Xeeb Yaj",
+    value: "xeeb-yaj",
+    description: "Xeeb Yaj lyrics",
+  },
 ];
