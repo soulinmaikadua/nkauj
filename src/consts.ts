@@ -643,4 +643,19 @@ export const ARTISTS = [
     value: "martin-hang",
     description: "Martin Hang lyrics",
   },
+  {
+    name: "Xf. Txawj Pes Vaj",
+    value: "txawj-pes-vaj",
+    description: "Xf. Txawj Pes Vaj lyrics",
+  },
+  {
+    name: "Paj Yeeb Vaj",
+    value: "paj-yeeb-vaj",
+    description: "Paj Yeeb Vaj lyrics",
+  },
+  {
+    name: "Paj Yeeb Sua Yaj",
+    value: "paj-yeeb-sua-yaj",
+    description: "Paj Yeeb Sua Yaj lyrics",
+  },
 ];
