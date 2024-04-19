@@ -528,4 +528,134 @@ export const ARTISTS = [
     value: "meej-vaj",
     description: "Meej Vaj lyrics",
   },
+  {
+    name: "Nkauj Lig Hawj",
+    value: "nkauj-lig-hawj",
+    description: "Nkauj Lig Hawj lyrics",
+  },
+  {
+    name: "Nas Las Yaj",
+    value: "nas-las-yaj",
+    description: "Nas Las Yaj lyrics",
+  },
+  {
+    name: "Xyooj Lauj",
+    value: "xyooj-lauj",
+    description: "Xyooj Lauj lyrics",
+  },
+  {
+    name: "Paj Zaub Lauj",
+    value: "paj-zaub-lauj",
+    description: "Paj Zaub Lauj lyrics",
+  },
+  {
+    name: "J Vang",
+    value: "j-vang",
+    description: "J Vang lyrics",
+  },
+  {
+    name: "Maim Lis",
+    value: "maim-lis",
+    description: "Maim Lis lyrics",
+  },
+  {
+    name: "Lily Vang",
+    value: "lily-vang",
+    description: "Lily Vang lyrics",
+  },
+  {
+    name: "Muaj Kub Yaj",
+    value: "muaj-kub-yaj",
+    description: "Muaj Kub Yaj lyrics",
+  },
+  {
+    name: "Nraug Nas Lis",
+    value: "nraug-nas-lis",
+    description: "Nraug Nas Lis lyrics",
+  },
+  {
+    name: "Nkauj Hli Vwj",
+    value: "nkauj-hli-vwj",
+    description: "Nkauj Hli Vwj lyrics",
+  },
+  {
+    name: "Peev Xwm",
+    value: "peev-xwm",
+    description: "Peev Xwm lyrics",
+  },
+  {
+    name: "Bee Lee",
+    value: "bee-lee",
+    description: "Bee Lee lyrics",
+  },
+  {
+    name: "Ali Chang",
+    value: "ali-chang",
+    description: "Ali Chang lyrics",
+  },
+  {
+    name: "Kub Yaj",
+    value: "kub-yaj",
+    description: "Kub Yaj lyrics",
+  },
+  {
+    name: "Lab Thoj",
+    value: "lab-thoj",
+    description: "Lab Thoj lyrics",
+  },
+  {
+    name: "Sua Ham",
+    value: "sua-ham",
+    description: "Sua Ham lyrics",
+  },
+  {
+    name: "Xeeb Yaj",
+    value: "xeeb-yaj",
+    description: "Xeeb Yaj lyrics",
+  },
+  {
+    name: "Shaunn Yang",
+    value: "shaunn-yang",
+    description: "Shaunn Yang lyrics",
+  },
+  {
+    name: "Lis Foom Vaj",
+    value: "lis-foom-vaj",
+    description: "Lis Foom Vaj lyrics",
+  },
+  {
+    name: "Maiv Choo Yaj",
+    value: "maiv-choo-yaj",
+    description: "Maiv Choo Yaj lyrics",
+  },
+  {
+    name: "Ntxhoo Vaj",
+    value: "ntxhoo-vaj",
+    description: "Ntxhoo Vaj lyrics",
+  },
+  {
+    name: "Ntxiag Hawj",
+    value: "ntxiag-hawj",
+    description: "Ntxiag Hawj lyrics",
+  },
+  {
+    name: "Martin Hang",
+    value: "martin-hang",
+    description: "Martin Hang lyrics",
+  },
+  {
+    name: "Xf. Txawj Pes Vaj",
+    value: "txawj-pes-vaj",
+    description: "Xf. Txawj Pes Vaj lyrics",
+  },
+  {
+    name: "Paj Yeeb Vaj",
+    value: "paj-yeeb-vaj",
+    description: "Paj Yeeb Vaj lyrics",
+  },
+  {
+    name: "Paj Yeeb Sua Yaj",
+    value: "paj-yeeb-sua-yaj",
+    description: "Paj Yeeb Sua Yaj lyrics",
+  },
 ];
