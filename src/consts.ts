@@ -613,4 +613,34 @@ export const ARTISTS = [
     value: "xeeb-yaj",
     description: "Xeeb Yaj lyrics",
   },
+  {
+    name: "Shaunn Yang",
+    value: "shaunn-yang",
+    description: "Shaunn Yang lyrics",
+  },
+  {
+    name: "Lis Foom Vaj",
+    value: "lis-foom-vaj",
+    description: "Lis Foom Vaj lyrics",
+  },
+  {
+    name: "Maiv Choo Yaj",
+    value: "maiv-choo-yaj",
+    description: "Maiv Choo Yaj lyrics",
+  },
+  {
+    name: "Ntxhoo Vaj",
+    value: "ntxhoo-vaj",
+    description: "Ntxhoo Vaj lyrics",
+  },
+  {
+    name: "Ntxiag Hawj",
+    value: "ntxiag-hawj",
+    description: "Ntxiag Hawj lyrics",
+  },
+  {
+    name: "Martin Hang",
+    value: "martin-hang",
+    description: "Martin Hang lyrics",
+  },
 ];
