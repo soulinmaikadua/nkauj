@@ -658,4 +658,24 @@ export const ARTISTS = [
     value: "paj-yeeb-sua-yaj",
     description: "Paj Yeeb Sua Yaj lyrics",
   },
+  {
+    name: "Maiv Lig Thoj",
+    value: "maiv-lig-thoj",
+    description: "Maiv Lig Thoj lyrics",
+  },
+  {
+    name: "Chang Her",
+    value: "chang-her",
+    description: "Chang Her lyrics",
+  },
+  {
+    name: "Cheng Lor",
+    value: "cheng-lor",
+    description: "Cheng Lor lyrics",
+  },
+  {
+    name: "Zuag Paj Xyooj",
+    value: "zuag-paj-xyooj",
+    description: "Zuag Paj Xyooj lyrics",
+  },
 ];
