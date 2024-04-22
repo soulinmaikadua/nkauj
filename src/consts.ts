@@ -678,4 +678,9 @@ export const ARTISTS = [
     value: "zuag-paj-xyooj",
     description: "Zuag Paj Xyooj lyrics",
   },
+  {
+    name: "Amanda Vang",
+    value: "amanda-vang",
+    description: "Amanda Vang lyrics",
+  },
 ];
