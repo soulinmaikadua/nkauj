@@ -683,4 +683,9 @@ export const ARTISTS = [
     value: "amanda-vang",
     description: "Amanda Vang lyrics",
   },
+  {
+    name: "Wish",
+    value: "wish",
+    description: "Wish lyrics",
+  },
 ];
