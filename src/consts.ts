@@ -698,4 +698,9 @@ export const ARTISTS = [
     value: "mai-lor",
     description: "Mai Lor lyrics",
   },
+  {
+    name: "Hands",
+    value: "hands",
+    description: "Hands lyrics",
+  },
 ];
