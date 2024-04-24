@@ -703,4 +703,14 @@ export const ARTISTS = [
     value: "hands",
     description: "Hands lyrics",
   },
+  {
+    name: "Meej Vwj",
+    value: "meej-vwj",
+    description: "Meej Vwj lyrics",
+  },
+  {
+    name: "Ci Ntsa Muas",
+    value: "ci-ntsa-muas",
+    description: "Ci Ntsa Muas lyrics",
+  },
 ];
