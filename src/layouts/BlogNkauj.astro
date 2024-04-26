@@ -30,7 +30,6 @@ const formattedDate = date.toLocaleDateString("en-US", {
   month: "long",
   day: "numeric",
 });
-console.log("Date: ", key);
 ---
 
 <html lang="en">
@@ -54,7 +53,12 @@ console.log("Date: ", key);
           </div>
           <div class="ml-5">
             <h1 class="text-3xl font-bold">{title}</h1>
-            <p>Artist: {artist}</p>
+            <p>
+              Artist: <a
+                href={`/${key}`}
+                class="hover:underline hover:text-red-400">{artist}</a
+              >
+            </p>
             <p class="text-sm">
               Published: <time datetime={pubDate}>{formattedDate}</time>
             </p>

@@ -658,4 +658,74 @@ export const ARTISTS = [
     value: "paj-yeeb-sua-yaj",
     description: "Paj Yeeb Sua Yaj lyrics",
   },
+  {
+    name: "Maiv Lig Thoj",
+    value: "maiv-lig-thoj",
+    description: "Maiv Lig Thoj lyrics",
+  },
+  {
+    name: "Chang Her",
+    value: "chang-her",
+    description: "Chang Her lyrics",
+  },
+  {
+    name: "Cheng Lor",
+    value: "cheng-lor",
+    description: "Cheng Lor lyrics",
+  },
+  {
+    name: "Zuag Paj Xyooj",
+    value: "zuag-paj-xyooj",
+    description: "Zuag Paj Xyooj lyrics",
+  },
+  {
+    name: "Amanda Vang",
+    value: "amanda-vang",
+    description: "Amanda Vang lyrics",
+  },
+  {
+    name: "Wish",
+    value: "wish",
+    description: "Wish lyrics",
+  },
+  {
+    name: "My Kurt Lor",
+    value: "my-kurt-lor",
+    description: "My Kurt Lor lyrics",
+  },
+  {
+    name: "Mai Lor",
+    value: "mai-lor",
+    description: "Mai Lor lyrics",
+  },
+  {
+    name: "Hands",
+    value: "hands",
+    description: "Hands lyrics",
+  },
+  {
+    name: "Meej Vwj",
+    value: "meej-vwj",
+    description: "Meej Vwj lyrics",
+  },
+  {
+    name: "Ci Ntsa Muas",
+    value: "ci-ntsa-muas",
+    description: "Ci Ntsa Muas lyrics",
+  },
+  {
+    name: "Macy Hawj",
+    value: "macy-hawj",
+    description: "Macy Hawj lyrics",
+  },
+  {
+    name: "New Breed",
+    value: "new-breed",
+    description: "New Breed lyrics",
+  },
+  {
+    name: "Paradise",
+    value: "paradise",
+    description: "Paradise lyrics",
+  },
 ];
