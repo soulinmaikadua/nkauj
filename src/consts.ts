@@ -713,4 +713,9 @@ export const ARTISTS = [
     value: "ci-ntsa-muas",
     description: "Ci Ntsa Muas lyrics",
   },
+  {
+    name: "Macy Hawj",
+    value: "macy-hawj",
+    description: "Macy Hawj lyrics",
+  },
 ];
