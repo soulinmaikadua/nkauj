@@ -718,4 +718,14 @@ export const ARTISTS = [
     value: "macy-hawj",
     description: "Macy Hawj lyrics",
   },
+  {
+    name: "New Breed",
+    value: "new-breed",
+    description: "New Breed lyrics",
+  },
+  {
+    name: "Paradise",
+    value: "paradise",
+    description: "Paradise lyrics",
+  },
 ];
