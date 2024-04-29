@@ -748,4 +748,9 @@ export const ARTISTS = [
     value: "xyum-xyooj",
     description: "Xyum Xyooj lyrics",
   },
+  {
+    name: "Voos Yaj",
+    value: "voos-yaj",
+    description: "Voos Yaj lyrics",
+  },
 ];
