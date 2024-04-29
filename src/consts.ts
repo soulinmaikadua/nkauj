@@ -728,4 +728,14 @@ export const ARTISTS = [
     value: "paradise",
     description: "Paradise lyrics",
   },
+  {
+    name: "Gao Nou Kue",
+    value: "gao-nou-kue",
+    description: "Gao Nou Kue lyrics",
+  },
+  {
+    name: "Nkauj Zoo Xyooj",
+    value: "nkauj-zoo-xyooj",
+    description: "Nkauj Zoo Xyooj lyrics",
+  },
 ];
