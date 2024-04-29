@@ -738,4 +738,14 @@ export const ARTISTS = [
     value: "nkauj-zoo-xyooj",
     description: "Nkauj Zoo Xyooj lyrics",
   },
+  {
+    name: "Chij Lis",
+    value: "chij-lis",
+    description: "Chij Lis lyrics",
+  },
+  {
+    name: "Xyum Xyooj",
+    value: "xyum-xyooj",
+    description: "Xyum Xyooj lyrics",
+  },
 ];
