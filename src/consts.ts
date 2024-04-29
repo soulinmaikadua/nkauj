@@ -753,4 +753,9 @@ export const ARTISTS = [
     value: "voos-yaj",
     description: "Voos Yaj lyrics",
   },
+  {
+    name: "Tswb Vaj",
+    value: "tswb-vaj",
+    description: "Tswb Vaj lyrics",
+  },
 ];
