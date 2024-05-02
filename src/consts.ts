@@ -778,4 +778,9 @@ export const ARTISTS = [
     value: "whyte-shadows",
     description: "Whyte Shadows lyrics",
   },
+  {
+    name: "Muas Lauj",
+    value: "muas-lauj",
+    description: "Muas Lauj lyrics",
+  },
 ];
