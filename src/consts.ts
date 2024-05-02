@@ -763,4 +763,19 @@ export const ARTISTS = [
     value: "yooj-yim-vaj",
     description: "Yooj Yim Vaj lyrics",
   },
+  {
+    name: "Vws Xyooj",
+    value: "vws-xyooj",
+    description: "Vws Xyooj lyrics",
+  },
+  {
+    name: "Kaying Xiong",
+    value: "kaying-xiong",
+    description: "Kaying Xiong lyrics",
+  },
+  {
+    name: "Whyte Shadows",
+    value: "whyte-shadows",
+    description: "Whyte Shadows lyrics",
+  },
 ];
