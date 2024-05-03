@@ -728,4 +728,74 @@ export const ARTISTS = [
     value: "paradise",
     description: "Paradise lyrics",
   },
+  {
+    name: "Gao Nou Kue",
+    value: "gao-nou-kue",
+    description: "Gao Nou Kue lyrics",
+  },
+  {
+    name: "Nkauj Zoo Xyooj",
+    value: "nkauj-zoo-xyooj",
+    description: "Nkauj Zoo Xyooj lyrics",
+  },
+  {
+    name: "Chij Lis",
+    value: "chij-lis",
+    description: "Chij Lis lyrics",
+  },
+  {
+    name: "Xyum Xyooj",
+    value: "xyum-xyooj",
+    description: "Xyum Xyooj lyrics",
+  },
+  {
+    name: "Voos Yaj",
+    value: "voos-yaj",
+    description: "Voos Yaj lyrics",
+  },
+  {
+    name: "Tswb Vaj",
+    value: "tswb-vaj",
+    description: "Tswb Vaj lyrics",
+  },
+  {
+    name: "Yooj Yim Vaj",
+    value: "yooj-yim-vaj",
+    description: "Yooj Yim Vaj lyrics",
+  },
+  {
+    name: "Vws Xyooj",
+    value: "vws-xyooj",
+    description: "Vws Xyooj lyrics",
+  },
+  {
+    name: "Kaying Xiong",
+    value: "kaying-xiong",
+    description: "Kaying Xiong lyrics",
+  },
+  {
+    name: "Whyte Shadows",
+    value: "whyte-shadows",
+    description: "Whyte Shadows lyrics",
+  },
+  {
+    name: "Muas Lauj",
+    value: "muas-lauj",
+    description: "Muas Lauj lyrics",
+  },
+  {
+    name: "Cua Yaj",
+    value: "cua-yaj",
+    description: "Cua Yaj lyrics",
+  },
+  {
+    name: "Cua Xyooj",
+    value: "cua-xyooj",
+    description: "Cua Xyooj lyrics",
+  },
+  {
+    name: "Kab Npauj Laim Yaj",
+    value: "kab-npauj-laim-yaj",
+    description: "Kab Npauj Laim Yaj lyrics",
+  },
 ];
