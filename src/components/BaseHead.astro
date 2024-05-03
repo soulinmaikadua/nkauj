@@ -58,12 +58,16 @@ const { title, description, image = "/logo.png" } = Astro.props;
   crossorigin="anonymous"></script>
 <!-- Google Anylitic -->
 <link rel="preconnect" href="https://www.google-analytics.com" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5KVRBGT4S"
-></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3F58WGZCM"
-></script>
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-X5KVRBGT4S"></script>
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-F3F58WGZCM"></script>
 <!-- Google Anylitic -->
-<script type="text/javascript">
+<script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
@@ -71,7 +75,20 @@ const { title, description, image = "/logo.png" } = Astro.props;
   gtag("js", new Date());
   gtag("config", "G-F3F58WGZCM");
 </script>
-<!-- <script type="text/partytown">
+
+<!-- Google Tag Manager -->
+<script type="text/partytown">
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-K9WFSZ8");
+
   // Define dataLayer and the gtag function.
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -86,24 +103,11 @@ const { title, description, image = "/logo.png" } = Astro.props;
     ad_personalization: "granted",
     analytics_storage: "granted",
   });
-</script> -->
-<!-- Google Tag Manager -->
-<!-- <script type="text/partytown">
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-K9WFSZ8");
-</script> -->
+</script>
 <!-- End Google Tag Manager -->
 
 <!-- Microsoft Clarify -->
-<script type="text/javascript">
+<script type="text/partytown">
   (function (c, l, a, r, i, t, y) {
     c[a] =
       c[a] ||
