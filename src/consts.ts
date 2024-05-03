@@ -793,4 +793,9 @@ export const ARTISTS = [
     value: "cua-xyooj",
     description: "Cua Xyooj lyrics",
   },
+  {
+    name: "Kab Npauj Laim Yaj",
+    value: "kab-npauj-laim-yaj",
+    description: "Kab Npauj Laim Yaj lyrics",
+  },
 ];
