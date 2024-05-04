@@ -5,8 +5,9 @@ import Footer from "../components/Footer.astro";
 import ServerRenderOnly from "../components/ServerRenderOnly.astro";
 import RelatedSong from "../components/RelatedSong.astro";
 import RelatedGuitar from "../components/RelatedGuitar.astro";
-// import GoogleAds from "../components/GoogleAds.astro";
-// import MultiAds from "../components/MultiAds.astro";
+import GoogleAds from "../components/GoogleAds.astro";
+import MultiAds from "../components/MultiAds.astro";
+import RelatedSongAd from "../components/RelatedSongAd.astro";
 import { SITE_TITLE } from "../consts";
 
 interface Props {
@@ -102,10 +103,10 @@ const formattedDate = date.toLocaleDateString("en-US", {
             <slot />
           </div>
           <div>
-            <!-- <MultiAds /> -->
+            <MultiAds />
           </div>
         </div>
-        <!-- <GoogleAds /> -->
+        <GoogleAds />
         <div class="border-b my-4"></div>
         <div class="flex justify-start items-center">
           <p>SHARE</p>
@@ -135,6 +136,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
             <RelatedSong name={key} />
           )
         }
+        <RelatedSongAd />
       </article>
     </main>
     <script type="text/javascript">

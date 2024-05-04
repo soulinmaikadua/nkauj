@@ -5,6 +5,7 @@ import Footer from "./Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS } from "../consts";
 import { getCollection } from "astro:content";
 import { dateFormat } from "../utils";
+import RelatedSongAd from "./RelatedSongAd.astro";
 const { name } = Astro.props;
 const posts: any = (await getCollection(name)).sort(
   (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -54,6 +55,7 @@ const concatenatedDescs = descs.join(", ");
         }
       </ul>
     </section>
+    <RelatedSongAd />
   </main>
   <Footer />
 </body>
