@@ -808,4 +808,29 @@ export const ARTISTS = [
     value: "kaub-yaj",
     description: "Kaub Yaj lyrics",
   },
+  {
+    name: "Choj Lauj",
+    value: "choj-lauj",
+    description: "Choj Lauj lyrics",
+  },
+  {
+    name: "Pong Vang",
+    value: "pong-vang",
+    description: "Pong Vang lyrics",
+  },
+  {
+    name: "Nus Hawj",
+    value: "nus-hawj",
+    description: "Nus Hawj lyrics",
+  },
+  {
+    name: "Kab Ziag Hawj",
+    value: "kab-ziag-hawj",
+    description: "Kab Ziag Hawj lyrics",
+  },
+  {
+    name: "Thaiv Lis",
+    value: "thaiv-lis",
+    description: "Thaiv Lis lyrics",
+  },
 ];
