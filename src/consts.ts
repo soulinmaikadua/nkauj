@@ -798,4 +798,14 @@ export const ARTISTS = [
     value: "kab-npauj-laim-yaj",
     description: "Kab Npauj Laim Yaj lyrics",
   },
+  {
+    name: "Ice Xiong",
+    value: "ice-xiong",
+    description: "Ice Xiong lyrics",
+  },
+  {
+    name: "Kaub Yaj",
+    value: "kaub-yaj",
+    description: "Kaub Yaj lyrics",
+  },
 ];
