@@ -833,4 +833,14 @@ export const ARTISTS = [
     value: "thaiv-lis",
     description: "Thaiv Lis lyrics",
   },
+  {
+    name: "Dalee Chang",
+    value: "dalee-chang",
+    description: "Dalee Chang lyrics",
+  },
+  {
+    name: "Tsheej Vwj",
+    value: "tsheej-vwj",
+    description: "Tsheej Vwj lyrics",
+  },
 ];
