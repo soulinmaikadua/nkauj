@@ -848,4 +848,9 @@ export const ARTISTS = [
     value: "nplooj-siab-vaj",
     description: "Nplooj Siab Vaj lyrics",
   },
+  {
+    name: "Rwg Xyooj",
+    value: "rwg-xyooj",
+    description: "Rwg Xyooj lyrics",
+  },
 ];

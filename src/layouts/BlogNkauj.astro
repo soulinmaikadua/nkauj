@@ -36,7 +36,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
 <html lang="en">
   <head>
     <BaseHead
-      title={`${title} ${artist} - ${SITE_TITLE} Hmoob`}
+      title={`${title} ${key !== "guitar" ? "Lyrics " : ""}By ${artist} - ${SITE_TITLE} Hmoob`}
       description={description}
       image={heroImage}
     />
