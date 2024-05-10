@@ -853,4 +853,9 @@ export const ARTISTS = [
     value: "rwg-xyooj",
     description: "Rwg Xyooj lyrics",
   },
+  {
+    name: "Tee Vang",
+    value: "tee-vang",
+    description: "Tee Vang lyrics",
+  },
 ];
