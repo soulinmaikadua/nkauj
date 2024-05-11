@@ -858,4 +858,9 @@ export const ARTISTS = [
     value: "tee-vang",
     description: "Tee Vang lyrics",
   },
+  {
+    name: "Sandy Moua",
+    value: "sandy-moua",
+    description: "Sandy Moua lyrics",
+  },
 ];
