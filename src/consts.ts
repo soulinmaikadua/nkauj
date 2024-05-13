@@ -863,4 +863,19 @@ export const ARTISTS = [
     value: "sandy-moua",
     description: "Sandy Moua lyrics",
   },
+  {
+    name: "Yujin Thao",
+    value: "yujin-thao",
+    description: "Yujin Thao lyrics",
+  },
+  {
+    name: "Pheej Vaj",
+    value: "pheej-vaj",
+    description: "Pheej Vaj lyrics",
+  },
+  {
+    name: "Tub Huas Xyooj",
+    value: "tub-huas-xyooj",
+    description: "Tub Huas Xyooj lyrics",
+  },
 ];
