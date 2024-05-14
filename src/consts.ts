@@ -899,3 +899,46 @@ export const ARTISTS = [
     description: "Hi So lyrics",
   },
 ];
+
+export const ARTISTS_GUITAR = [
+  {
+    name: "Tsom Xyooj",
+    value: "tsom-xyooj-guitar",
+    description: "Tsom Xyooj Guitar Chords",
+  },
+  {
+    name: "Luj Yaj",
+    value: "luj-yaj-guitar",
+    description: "Luj Yaj Guitar Chords",
+  },
+  {
+    name: "Loky Thao",
+    value: "loky-thao-guitar",
+    description: "Loky Thao Guitar Chords",
+  },
+  {
+    name: "Zaj Dub",
+    value: "zaj-dub-guitar",
+    description: "Zaj Dub Guitar Chords",
+  },
+  {
+    name: "Neng Vang",
+    value: "neng-vang-guitar",
+    description: "Neng Vang Guitar Chords",
+  },
+  {
+    name: "Kub Vaj",
+    value: "kub-vaj-guitar",
+    description: "Kub Vaj Guitar Chords",
+  },
+  {
+    name: "Leng Yang",
+    value: "leng-yang-guitar",
+    description: "Leng Yang Guitar Chords",
+  },
+  {
+    name: "Lis Pov",
+    value: "lis-pov-guitar",
+    description: "Lis Pov Guitar Chords",
+  },
+];
