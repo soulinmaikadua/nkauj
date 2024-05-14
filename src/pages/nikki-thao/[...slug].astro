@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import BlogNkauj from "../../layouts/BlogNkauj.astro";
+import NkaujPage from "../../layouts/NkaujPage.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("nikki-thao");
@@ -19,6 +19,6 @@ const newProps = {
 };
 ---
 
-<BlogNkauj {...newProps}>
+<NkaujPage {...newProps}>
   <Content />
-</BlogNkauj>
+</NkaujPage>
