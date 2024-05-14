@@ -878,4 +878,14 @@ export const ARTISTS = [
     value: "tub-huas-xyooj",
     description: "Tub Huas Xyooj lyrics",
   },
+  {
+    name: "Tupao Xiong",
+    value: "tupao-xiong",
+    description: "Tupao Xiong lyrics",
+  },
+  {
+    name: "Linaj Thoj",
+    value: "linaj-thoj",
+    description: "Linaj Thoj lyrics",
+  },
 ];
