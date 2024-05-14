@@ -884,8 +884,18 @@ export const ARTISTS = [
     description: "Tupao Xiong lyrics",
   },
   {
-    name: "Linaj Thoj",
-    value: "linaj-thoj",
-    description: "Linaj Thoj lyrics",
+    name: "Lis Naj Thoj",
+    value: "lis-naj-thoj",
+    description: "Lis Naj Thoj lyrics",
+  },
+  {
+    name: "Ib Sim Hawj",
+    value: "ib-sim-hawj",
+    description: "Ib Sim Hawj lyrics",
+  },
+  {
+    name: "Hi So",
+    value: "hi-so",
+    description: "Hi So lyrics",
   },
 ];
