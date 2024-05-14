@@ -4,8 +4,8 @@ import { dateFormat } from "../utils";
 const { name } = Astro.props;
 const { slug } = Astro.params;
 
-const posts = (await getCollection("guitar")).filter(
-  (post: any) => post.id.includes(name) && post.slug !== slug,
+const posts = (await getCollection(name)).filter(
+  (post: any) => post.slug !== slug,
 );
 ---
 
@@ -19,7 +19,7 @@ const posts = (await getCollection("guitar")).filter(
       <ul class="mt-4">
         {posts.map((post: any) => (
           <li class="border-b mb-1 pb-1">
-            <a href={`/guitar/${post.slug}/`} class="hover:underline">
+            <a href={`/${name}/${post.slug}/`} class="hover:underline">
               <h5 class="text-xl md:text-2xl">{post.data.title}</h5>
             </a>
             <p class="text-sm mt-n4">

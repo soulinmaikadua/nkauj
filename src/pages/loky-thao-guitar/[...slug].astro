@@ -1,0 +1,24 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import GuitarPage from "../../layouts/GuitarPage.astro";
+export const prerender = true;
+export async function getStaticPaths() {
+  const posts = await getCollection("loky-thao-guitar");
+  return posts.map((post: any) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"loky-thao-guitar">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "loky-thao-guitar",
+};
+---
+
+<GuitarPage {...newProps}>
+  <Content />
+</GuitarPage>
