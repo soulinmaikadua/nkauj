@@ -11,7 +11,9 @@ const { data } = Astro.props;
     {data?.title} lyrics
   </h2>
   <h2 class="sr-only">
-    {data?.title} guitar
+    {data?.title} guitar chords
   </h2>
   <h4 class="sr-only">{data?.artist}</h4>
+  <h5 class="sr-only">{data?.title} เนื้อเพลง</h5>
+  <h6 class="sr-only">{data?.title} คอร์ด</h6>
 </div>

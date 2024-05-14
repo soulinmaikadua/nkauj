@@ -122,3 +122,11 @@ const { title, description, image = "/logo.png" } = Astro.props;
   })(window, document, "clarity", "script", "g2djvhbmmj");
 </script>
 <!-- End Microsoft Clarify -->
+
+<style>
+  @media print {
+    footer {
+      display: none !important;
+    }
+  }
+</style>

@@ -3,7 +3,6 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import ServerRenderOnly from "../components/ServerRenderOnly.astro";
-import RelatedSong from "../components/RelatedSong.astro";
 import RelatedGuitar from "../components/RelatedGuitar.astro";
 import GoogleAds from "../components/GoogleAds.astro";
 import MultiAds from "../components/MultiAds.astro";
@@ -17,10 +16,12 @@ interface Props {
   writtenBy?: string;
   pubDate: string;
   heroImage: string;
+  image?: string;
   key: string;
 }
 
-const { title, description, artist, heroImage, pubDate, key } = Astro.props;
+const { title, description, artist, heroImage, pubDate, key, image } =
+  Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // Parse the date string
 const date = new Date(pubDate);
@@ -36,9 +37,9 @@ const formattedDate = date.toLocaleDateString("en-US", {
 <html lang="en">
   <head>
     <BaseHead
-      title={`${title} ${key !== "guitar" ? "Lyrics " : ""}By ${artist} - ${SITE_TITLE} Hmoob`}
+      title={`${title} By ${artist} Guitar chords - ${SITE_TITLE} Hmoob`}
       description={description}
-      image={heroImage}
+      image={image || heroImage}
     />
   </head>
 
@@ -50,13 +51,14 @@ const formattedDate = date.toLocaleDateString("en-US", {
           <div
             class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
           >
-            <img src={heroImage} alt={title} class="rounded-md" />
+            <img src={heroImage} id="image" alt={title} class="rounded-md" />
           </div>
           <div class="ml-5">
-            <h1 class="text-3xl font-bold">{title}</h1>
+            <h1 id="song-title" class="text-3xl font-bold">{title}</h1>
             <p>
               Artist: <a
                 href={`/${key}`}
+                id="artist-name"
                 class="hover:underline hover:text-red-400">{artist}</a
               >
             </p>
@@ -67,9 +69,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
         </div>
         <div>
           <div class="flex justify-between items-center">
-            <h2 class="text-xl">
-              {key === "guitar" ? "GUITAR CHORDS" : "LYRIC"}
-            </h2>
+            <h2 class="text-xl">GUITAR CHORDS</h2>
             <button
               id="print-button"
               class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100"
@@ -129,25 +129,47 @@ const formattedDate = date.toLocaleDateString("en-US", {
           </a>
         </div>
         <div class="border-b my-4"></div>
-        {
-          key === "guitar" ? (
-            <RelatedGuitar name={key} />
-          ) : (
-            <RelatedSong name={key} />
-          )
-        }
+
+        <RelatedGuitar name={key} />
+
         <RelatedSongAd />
       </article>
     </main>
     <script type="text/javascript">
+      const songTitle = document.getElementById("song-title").textContent;
+      const artistName = document.getElementById("artist-name").textContent;
       const eventHandler = document.getElementById("print-button");
       eventHandler.addEventListener("click", () => {
         var content = document.getElementById("contain-body").innerHTML;
         var printWindow = window.open("", "_blank");
         printWindow.document.open();
         printWindow.document.write(
-          "<html><head><title>Print</title></head><body>",
+          `<!DOCTYPE html>
+		  	<html>
+		  	<head>
+				<title>${songTitle} By ${artistName} - nkauj.com</title>
+				<meta charset="utf-8" />
+				<meta name="viewport" content="width=device-width,initial-scale=1" />
+				<style>
+					h1.h1 {
+						position: absolute;
+						top: 50%;
+						right: 0%;
+						transform: translate(-0%, -0%) rotate(-90deg);
+						margin:0;
+						font-size: 3rem;
+						white-space: nowrap;
+					}
+					 @media print {
+						footer {
+							display: none !important;
+						}
+					}
+				</style>
+			</head>
+			<body>`,
         );
+        printWindow.document.write("<h1 class='h1'>nkauj.com</h1>");
         printWindow.document.write(content);
         printWindow.document.write("</body></html>");
         printWindow.document.close();

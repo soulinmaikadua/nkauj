@@ -853,4 +853,49 @@ export const ARTISTS = [
     value: "rwg-xyooj",
     description: "Rwg Xyooj lyrics",
   },
+  {
+    name: "Tee Vang",
+    value: "tee-vang",
+    description: "Tee Vang lyrics",
+  },
+  {
+    name: "Sandy Moua",
+    value: "sandy-moua",
+    description: "Sandy Moua lyrics",
+  },
+  {
+    name: "Yujin Thao",
+    value: "yujin-thao",
+    description: "Yujin Thao lyrics",
+  },
+  {
+    name: "Pheej Vaj",
+    value: "pheej-vaj",
+    description: "Pheej Vaj lyrics",
+  },
+  {
+    name: "Tub Huas Xyooj",
+    value: "tub-huas-xyooj",
+    description: "Tub Huas Xyooj lyrics",
+  },
+  {
+    name: "Tupao Xiong",
+    value: "tupao-xiong",
+    description: "Tupao Xiong lyrics",
+  },
+  {
+    name: "Lis Naj Thoj",
+    value: "lis-naj-thoj",
+    description: "Lis Naj Thoj lyrics",
+  },
+  {
+    name: "Ib Sim Hawj",
+    value: "ib-sim-hawj",
+    description: "Ib Sim Hawj lyrics",
+  },
+  {
+    name: "Hi So",
+    value: "hi-so",
+    description: "Hi So lyrics",
+  },
 ];
