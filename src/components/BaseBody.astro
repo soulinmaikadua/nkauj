@@ -15,6 +15,8 @@ const singer = ARTISTS.find((el: any) => el.value === name);
 const fiveSongs = posts.length >= 5 ? posts.slice(0, 5) : posts;
 const descs = fiveSongs.map((el: any) => el.data.description);
 const concatenatedDescs = descs.join(", ");
+
+const today = new Date();
 ---
 
 <head>
@@ -40,6 +42,9 @@ const concatenatedDescs = descs.join(", ");
     <h1 class="text-xl md:text-3xl font-bold">{singer?.name}</h1>
     <h2 class="sr-only">{singer?.name} Songs</h2>
     <h3 class="sr-only">{singer?.name} Lyrics</h3>
+    <h4 class="sr-only">
+      {today.getFullYear()}/{today.getMonth() - 1}/{today.getDate()}
+    </h4>
     <div class="border-b"></div>
     <section>
       <ul>
