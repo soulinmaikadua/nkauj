@@ -15,12 +15,13 @@ interface Props {
   artist: string;
   writtenBy?: string;
   pubDate: string;
+  tone?: string;
   heroImage: string;
   image?: string;
   key: string;
 }
 
-const { title, description, artist, heroImage, pubDate, key, image } =
+const { title, description, artist, heroImage, pubDate, key, image, tone } =
   Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // Parse the date string
@@ -55,6 +56,13 @@ const formattedDate = date.toLocaleDateString("en-US", {
           </div>
           <div class="ml-5">
             <h1 id="song-title" class="text-3xl font-bold">{title}</h1>
+            {
+              tone && (
+                <p>
+                  Tone: <b>{tone}</b>
+                </p>
+              )
+            }
             <p>
               Artist: <a
                 href={`/${key}`}
@@ -127,6 +135,19 @@ const formattedDate = date.toLocaleDateString("en-US", {
           >
             <img src="/social/x.png" alt="Facebook logo" class="h-5 w-5" />
           </a>
+          <span id="url" class="sr-only">{canonicalURL}</span>
+          <svg
+            id="copy-it"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 ml-2 cursor-pointer"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z"
+              clip-rule="evenodd"></path>
+          </svg>
         </div>
         <div class="border-b my-4"></div>
 
@@ -174,6 +195,10 @@ const formattedDate = date.toLocaleDateString("en-US", {
         printWindow.document.write("</body></html>");
         printWindow.document.close();
         printWindow.print();
+      });
+      document.getElementById("copy-it").addEventListener("click", function () {
+        const url = document.getElementById("url").textContent;
+        navigator.clipboard.writeText(url);
       });
     </script>
     <Footer />
