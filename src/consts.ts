@@ -961,4 +961,9 @@ export const ARTISTS_GUITAR = [
     value: "fbi-yim-lee-guitar",
     description: "Yim Lis (Mr. FBI) Guitar Chords",
   },
+  {
+    name: "Ntsaim Vaj",
+    value: "ntsaim-vaj-guitar",
+    description: "Ntsaim Vaj Guitar Chords",
+  },
 ];
