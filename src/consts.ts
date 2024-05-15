@@ -946,4 +946,14 @@ export const ARTISTS_GUITAR = [
     value: "xai-thao-guitar",
     description: "Xai Thao Guitar Chords",
   },
+  {
+    name: "Laib Laus",
+    value: "laib-laus-guitar",
+    description: "Laib Laus Guitar Chords",
+  },
+  {
+    name: "Dang Thao",
+    value: "dang-thao-guitar",
+    description: "Dang Thao Guitar Chords",
+  },
 ];
