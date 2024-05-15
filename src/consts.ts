@@ -941,4 +941,9 @@ export const ARTISTS_GUITAR = [
     value: "lis-pov-guitar",
     description: "Lis Pov Guitar Chords",
   },
+  {
+    name: "Xai Thao",
+    value: "xai-thao-guitar",
+    description: "Xai Thao Guitar Chords",
+  },
 ];
