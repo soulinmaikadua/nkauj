@@ -956,4 +956,9 @@ export const ARTISTS_GUITAR = [
     value: "dang-thao-guitar",
     description: "Dang Thao Guitar Chords",
   },
+  {
+    name: "Yim Lis (Mr. FBI)",
+    value: "fbi-yim-lee-guitar",
+    description: "Yim Lis (Mr. FBI) Guitar Chords",
+  },
 ];
