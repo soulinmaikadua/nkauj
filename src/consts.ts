@@ -908,6 +908,11 @@ export const ARTISTS = [
     value: "maiv-ntxawm-yaj",
     description: "Maiv Ntxawm Yaj lyrics",
   },
+  {
+    name: "Tsua Vaj",
+    value: "tsua-vaj",
+    description: "Tsua Vaj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
