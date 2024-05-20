@@ -898,6 +898,16 @@ export const ARTISTS = [
     value: "hi-so",
     description: "Hi So lyrics",
   },
+  {
+    name: "Sua Lauj",
+    value: "sua-lauj",
+    description: "Sua Lauj lyrics",
+  },
+  {
+    name: "Maiv Ntxawm Yaj",
+    value: "maiv-ntxawm-yaj",
+    description: "Maiv Ntxawm Yaj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
