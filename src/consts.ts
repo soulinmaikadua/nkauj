@@ -913,6 +913,16 @@ export const ARTISTS = [
     value: "tsua-vaj",
     description: "Tsua Vaj lyrics",
   },
+  {
+    name: "Yeeb Yaj",
+    value: "yeeb-yaj",
+    description: "Yeeb Yaj lyrics",
+  },
+  {
+    name: "4L",
+    value: "4l",
+    description: "4L lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
