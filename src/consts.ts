@@ -923,6 +923,26 @@ export const ARTISTS = [
     value: "4l",
     description: "4L lyrics",
   },
+  {
+    name: "Sua Vaj",
+    value: "sua-vaj",
+    description: "Sua Vaj lyrics",
+  },
+  {
+    name: "Maiv Kub Vwj",
+    value: "maiv-kub-vwj",
+    description: "Maiv Kub Vwj lyrics",
+  },
+  {
+    name: "Maiv Kub Xyooj",
+    value: "maiv-kub-xyooj",
+    description: "Maiv Kub Xyooj lyrics",
+  },
+  {
+    name: "Maiv Neeb Thoj",
+    value: "maiv-neeb-thoj",
+    description: "Maiv Neeb Thoj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
