@@ -958,6 +958,11 @@ export const ARTISTS = [
     value: "maiv-lauj",
     description: "Maiv Lauj lyrics",
   },
+  {
+    name: "Riam Yaj",
+    value: "riam-yaj",
+    description: "Riam Yaj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
