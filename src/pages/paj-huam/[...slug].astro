@@ -13,8 +13,12 @@ type Props = CollectionEntry<"paj-huam">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "paj-huam",
+};
 ---
 
-<PajHuam {...post.data}>
+<PajHuam {...newProps}>
   <Content />
 </PajHuam>
