@@ -898,6 +898,76 @@ export const ARTISTS = [
     value: "hi-so",
     description: "Hi So lyrics",
   },
+  {
+    name: "Sua Lauj",
+    value: "sua-lauj",
+    description: "Sua Lauj lyrics",
+  },
+  {
+    name: "Maiv Ntxawm Yaj",
+    value: "maiv-ntxawm-yaj",
+    description: "Maiv Ntxawm Yaj lyrics",
+  },
+  {
+    name: "Tsua Vaj",
+    value: "tsua-vaj",
+    description: "Tsua Vaj lyrics",
+  },
+  {
+    name: "Yeeb Yaj",
+    value: "yeeb-yaj",
+    description: "Yeeb Yaj lyrics",
+  },
+  {
+    name: "4L",
+    value: "4l",
+    description: "4L lyrics",
+  },
+  {
+    name: "Sua Vaj",
+    value: "sua-vaj",
+    description: "Sua Vaj lyrics",
+  },
+  {
+    name: "Maiv Kub Vwj",
+    value: "maiv-kub-vwj",
+    description: "Maiv Kub Vwj lyrics",
+  },
+  {
+    name: "Maiv Kub Xyooj",
+    value: "maiv-kub-xyooj",
+    description: "Maiv Kub Xyooj lyrics",
+  },
+  {
+    name: "Maiv Neeb Thoj",
+    value: "maiv-neeb-thoj",
+    description: "Maiv Neeb Thoj lyrics",
+  },
+  {
+    name: "Maiv Yiag Vwj",
+    value: "maiv-yiag-vwj",
+    description: "Maiv Yiag Vwj lyrics",
+  },
+  {
+    name: "Mab Vaj",
+    value: "mab-vaj",
+    description: "Mab Vaj lyrics",
+  },
+  {
+    name: "Maiv Lauj",
+    value: "maiv-lauj",
+    description: "Maiv Lauj lyrics",
+  },
+  {
+    name: "Riam Yaj",
+    value: "riam-yaj",
+    description: "Riam Yaj lyrics",
+  },
+  {
+    name: "Vam Muas",
+    value: "vam-muas",
+    description: "Vam Muas lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
