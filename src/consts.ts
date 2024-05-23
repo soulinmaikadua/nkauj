@@ -968,6 +968,31 @@ export const ARTISTS = [
     value: "vam-muas",
     description: "Vam Muas lyrics",
   },
+  {
+    name: "Kub Vaj",
+    value: "kub-vaj",
+    description: "Kub Vaj lyrics",
+  },
+  {
+    name: "Billy Chang",
+    value: "billy-chang",
+    description: "Billy Chang lyrics",
+  },
+  {
+    name: "Xub Yaj",
+    value: "xub-yaj",
+    description: "Xub Yaj lyrics",
+  },
+  {
+    name: "Unknown",
+    value: "unknown",
+    description: "Unknown lyrics",
+  },
+  {
+    name: "Ceeb Tsheej Vaj",
+    value: "ceeb-tsheej-vaj",
+    description: "Ceeb Tsheej Vaj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
