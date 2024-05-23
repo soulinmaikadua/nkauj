@@ -993,6 +993,11 @@ export const ARTISTS = [
     value: "ceeb-tsheej-vaj",
     description: "Ceeb Tsheej Vaj lyrics",
   },
+  {
+    name: "Coob Thoj",
+    value: "coob-thoj",
+    description: "Coob Thoj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
