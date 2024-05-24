@@ -1078,6 +1078,16 @@ export const ARTISTS = [
     value: "pauv-yaj",
     description: "Pauv Yaj lyrics",
   },
+  {
+    name: "Hiav Txwv Band",
+    value: "hiav-txwv-band",
+    description: "Hiav Txwv Band lyrics",
+  },
+  {
+    name: "Paj Huab Vaj",
+    value: "paj-huab-vaj",
+    description: "Paj Huab Vaj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
