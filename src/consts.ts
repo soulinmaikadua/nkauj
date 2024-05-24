@@ -1088,6 +1088,11 @@ export const ARTISTS = [
     value: "paj-huab-vaj",
     description: "Paj Huab Vaj lyrics",
   },
+  {
+    name: "Paj Huab Thoj",
+    value: "paj-huab-thoj",
+    description: "Paj Huab Thoj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
