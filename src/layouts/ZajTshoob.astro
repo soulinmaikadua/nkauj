@@ -5,7 +5,15 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
 
-type Props = CollectionEntry<"nkauj">["data"];
+interface Props {
+  title: string;
+  description: string;
+  artist: string;
+  writtenBy?: string;
+  pubDate: string;
+  heroImage: string;
+  key: string;
+}
 
 const { title, description, artist, pubDate } = Astro.props;
 // Parse the date string
