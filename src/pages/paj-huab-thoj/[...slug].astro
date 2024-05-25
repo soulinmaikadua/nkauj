@@ -1,0 +1,24 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import NkaujPage from "../../layouts/NkaujPage.astro";
+export const prerender = true;
+export async function getStaticPaths() {
+  const posts = await getCollection("paj-huab-thoj");
+  return posts.map((post: any) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"paj-huab-thoj">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "paj-huab-thoj",
+};
+---
+
+<NkaujPage {...newProps}>
+  <Content />
+</NkaujPage>

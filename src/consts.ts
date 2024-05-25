@@ -968,6 +968,131 @@ export const ARTISTS = [
     value: "vam-muas",
     description: "Vam Muas lyrics",
   },
+  {
+    name: "Kub Vaj",
+    value: "kub-vaj",
+    description: "Kub Vaj lyrics",
+  },
+  {
+    name: "Billy Chang",
+    value: "billy-chang",
+    description: "Billy Chang lyrics",
+  },
+  {
+    name: "Xub Yaj",
+    value: "xub-yaj",
+    description: "Xub Yaj lyrics",
+  },
+  {
+    name: "Unknown",
+    value: "unknown",
+    description: "Unknown lyrics",
+  },
+  {
+    name: "Ceeb Tsheej Vaj",
+    value: "ceeb-tsheej-vaj",
+    description: "Ceeb Tsheej Vaj lyrics",
+  },
+  {
+    name: "Coob Thoj",
+    value: "coob-thoj",
+    description: "Coob Thoj lyrics",
+  },
+  {
+    name: "Lig Vaj",
+    value: "lig-vaj",
+    description: "Lig Vaj lyrics",
+  },
+  {
+    name: "Tub Huas Thoj",
+    value: "tub-huas-thoj",
+    description: "Tub Huas Thoj lyrics",
+  },
+  {
+    name: "Keng Kue",
+    value: "keng-kue",
+    description: "Keng Kue lyrics",
+  },
+  {
+    name: "Khwb Yaj",
+    value: "khwb-yaj",
+    description: "Khwb Yaj lyrics",
+  },
+  {
+    name: "Txoov Vaj",
+    value: "txoov-vaj",
+    description: "Txoov Vaj lyrics",
+  },
+  {
+    name: "Nuj Toog Thoj",
+    value: "nuj-toog-thoj",
+    description: "Nuj Toog Thoj lyrics",
+  },
+  {
+    name: "Veness Chang",
+    value: "veness-chang",
+    description: "Veness Chang lyrics",
+  },
+  {
+    name: "Ntxhw Yaj",
+    value: "ntxhw-yaj",
+    description: "Ntxhw Yaj lyrics",
+  },
+  {
+    name: "Ncaus Xyooj",
+    value: "ncaus-xyooj",
+    description: "Ncaus Xyooj lyrics",
+  },
+  {
+    name: "Tshaj Hawj",
+    value: "tshaj-hawj",
+    description: "Tshaj Hawj lyrics",
+  },
+  {
+    name: "Ntxawm Ntxuaj Pag Lauj",
+    value: "ntxawm-ntxuaj-pag-lauj",
+    description: "Ntxawm Ntxuaj Pag Lauj lyrics",
+  },
+  {
+    name: "Danial Xiong",
+    value: "danial-xiong",
+    description: "Danial Xiong lyrics",
+  },
+  {
+    name: "The Loswing",
+    value: "the-loswing",
+    description: "The Loswing lyrics",
+  },
+  {
+    name: "Ntsa Iab",
+    value: "ntsa-iab",
+    description: "Ntsa Iab lyrics",
+  },
+  {
+    name: "Peter",
+    value: "peter",
+    description: "Peter lyrics",
+  },
+  {
+    name: "Pauv Yaj",
+    value: "pauv-yaj",
+    description: "Pauv Yaj lyrics",
+  },
+  {
+    name: "Hiav Txwv Band",
+    value: "hiav-txwv-band",
+    description: "Hiav Txwv Band lyrics",
+  },
+  {
+    name: "Paj Huab Vaj",
+    value: "paj-huab-vaj",
+    description: "Paj Huab Vaj lyrics",
+  },
+  {
+    name: "Paj Huab Thoj",
+    value: "paj-huab-thoj",
+    description: "Paj Huab Thoj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
