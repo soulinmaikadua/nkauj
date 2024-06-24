@@ -1176,4 +1176,9 @@ export const ARTISTS_GUITAR = [
     value: "nquab-tsab-guitar",
     description: "Nquab Tsab Guitar Chords",
   },
+  {
+    name: "Mana Xiong",
+    value: "mana-xiong-guitar",
+    description: "Mana Xiong Guitar Chords",
+  },
 ];
