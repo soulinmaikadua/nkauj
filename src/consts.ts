@@ -1171,4 +1171,9 @@ export const ARTISTS_GUITAR = [
     value: "mang-vang-guitar",
     description: "Mang Vang Guitar Chords",
   },
+  {
+    name: "Nquab Tsab",
+    value: "nquab-tsab-guitar",
+    description: "Nquab Tsab Guitar Chords",
+  },
 ];
