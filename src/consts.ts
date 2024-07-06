@@ -1093,6 +1093,11 @@ export const ARTISTS = [
     value: "paj-huab-thoj",
     description: "Paj Huab Thoj lyrics",
   },
+  {
+    name: "P.A.P BEAT BAND",
+    value: "pap-beat-band",
+    description: "P.A.P BEAT BAND lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
