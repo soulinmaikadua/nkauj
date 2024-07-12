@@ -1098,6 +1098,11 @@ export const ARTISTS = [
     value: "pap-beat-band",
     description: "P.A.P BEAT BAND lyrics",
   },
+  {
+    name: "Black Yang",
+    value: "black-yang",
+    description: "Black Yang lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
@@ -1185,5 +1190,10 @@ export const ARTISTS_GUITAR = [
     name: "Mana Xiong",
     value: "mana-xiong-guitar",
     description: "Mana Xiong Guitar Chords",
+  },
+  {
+    name: "Pob Tsuas Xyooj",
+    value: "pob-tsuas-xyooj-guitar",
+    description: "Pob Tsuas Xyooj Guitar Chords",
   },
 ];
