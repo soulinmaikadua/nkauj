@@ -1103,6 +1103,11 @@ export const ARTISTS = [
     value: "black-yang",
     description: "Black Yang lyrics",
   },
+  {
+    name: "Saub Lig Yaj",
+    value: "saub-lig-yaj",
+    description: "Saub Lig Yaj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
