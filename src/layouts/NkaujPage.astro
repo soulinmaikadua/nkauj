@@ -30,6 +30,15 @@ const formattedDate = date.toLocaleDateString("en-US", {
   month: "long",
   day: "numeric",
 });
+
+const blogData = {
+  title,
+  description: title,
+  heroImage,
+  artist,
+  pubDate,
+  canonicalURL,
+};
 ---
 
 <html lang="en">
@@ -39,23 +48,56 @@ const formattedDate = date.toLocaleDateString("en-US", {
       description={description}
       image={heroImage}
     />
+
   </head>
 
   <body>
     <Header />
+	<script type="application/ld+json">
+    {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": blogData.title,
+    "description": blogData.description,
+    "image": blogData.heroImage,
+    "author": {
+      "@type": "Person",
+      "name": blogData.artist,
+      "url": blogData.canonicalURL
+    },
+    "datePublished": blogData.pubDate,
+    "dateModified": blogData.pubDate,
+    "publisher": {
+      "@type": "Organization",
+      "name": blogData.artist,
+      "logo": {
+        "@type": "ImageObject",
+        "url": blogData.heroImage
+      }
+    },
+    "keywords": blogData.title
+  })}
+  </script>
     <main class="max-w-6xl mx-auto my-3 px-4">
       <article>
         <div class="flex justify-start pb-3 mb-5 border-b">
           <div
             class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
           >
-            <img src={heroImage} id="image" alt={title} class="rounded-md" />
+            <img
+              src={heroImage}
+              id="image"
+              alt={artist}
+              class="rounded-md"
+              height="128"
+              width="128"
+            />
           </div>
           <div class="ml-5">
             <h1 id="song-title" class="text-3xl font-bold">{title}</h1>
             <p>
               Artist: <a
-                href={`/${key}`}
+                href={`/${key}/`}
                 id="artist-name"
                 class="hover:underline hover:text-red-400">{artist}</a
               >
