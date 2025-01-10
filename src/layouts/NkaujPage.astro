@@ -1,4 +1,5 @@
 ---
+import injectScript from "@astrojs/partytown";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -39,6 +40,33 @@ const blogData = {
   pubDate,
   canonicalURL,
 };
+// injectScript({
+//   type: "application/ld+json",
+//   content: `{
+//     "@context": "https://schema.org",
+//     "@type": "BlogPosting",
+//     "headline": ${blogData.title},
+//     "description": ${blogData.description},
+//     "image": ${blogData.heroImage},
+//     "author": {
+//       "@type": "Person",
+//       "name": ${blogData.artist},
+//       "url": ${blogData.canonicalURL}
+//     },
+//     "datePublished": ${blogData.pubDate},
+//     "dateModified": ${blogData.pubDate},
+//     "publisher": {
+//       "@type": "Organization",
+//       "name": ${blogData.artist},
+//       "logo": {
+//         "@type": "ImageObject",
+//         "url": ${blogData.heroImage}
+//       }
+//     },
+//     "keywords": ${blogData.title}
+//   }
+//   `,
+// });
 ---
 
 <html lang="en">
@@ -48,145 +76,115 @@ const blogData = {
       description={description}
       image={heroImage}
     />
-
   </head>
 
   <body>
     <Header />
-	<!-- <script type="application/ld+json">
-    {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": blogData.title,
-    "description": blogData.description,
-    "image": blogData.heroImage,
-    "author": {
-      "@type": "Person",
-      "name": blogData.artist,
-      "url": blogData.canonicalURL
-    },
-    "datePublished": blogData.pubDate,
-    "dateModified": blogData.pubDate,
-    "publisher": {
-      "@type": "Organization",
-      "name": blogData.artist,
-      "logo": {
-        "@type": "ImageObject",
-        "url": blogData.heroImage
-      }
-    },
-    "keywords": blogData.title
-  })}
-  </script> -->
     <main class="max-w-6xl mx-auto my-3 px-4">
-      <article>
-        <div class="flex justify-start pb-3 mb-5 border-b">
-          <div
-            class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
+      <div class="flex justify-start pb-3 mb-5 border-b">
+        <div
+          class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
+        >
+          <img
+            src={heroImage}
+            id="image"
+            alt={artist}
+            class="rounded-md"
+            height="128"
+            width="128"
+          />
+        </div>
+        <div class="ml-5">
+          <h1 id="song-title" class="text-xl md:text-3xl font-bold">
+            {title}
+          </h1>
+          <p>
+            Artist: <a
+              href={`/${key}/`}
+              id="artist-name"
+              class="hover:underline hover:text-red-400">{artist}</a
+            >
+          </p>
+          <p class="text-sm">
+            Published: <time datetime={pubDate}>{formattedDate}</time>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl">LYRIC</h2>
+          <button
+            id="print-button"
+            class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100"
           >
-            <img
-              src={heroImage}
-              id="image"
-              alt={artist}
-              class="rounded-md"
-              height="128"
-              width="128"
-            />
-          </div>
-          <div class="ml-5">
-            <h1 id="song-title" class="text-3xl font-bold">{title}</h1>
-            <p>
-              Artist: <a
-                href={`/${key}/`}
-                id="artist-name"
-                class="hover:underline hover:text-red-400">{artist}</a
+            <span
+              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
               >
-            </p>
-            <p class="text-sm">
-              Published: <time datetime={pubDate}>{formattedDate}</time>
-            </p>
-          </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z"
+                ></path>
+              </svg>
+
+              Print
+            </span>
+          </button>
+        </div>
+      </div>
+      <ServerRenderOnly data={Astro.props} />
+      <div class="grid grid-cols-1 md:grid-cols-4">
+        <div id="contain-body" class="col-span-3">
+          <slot />
         </div>
         <div>
-          <div class="flex justify-between items-center">
-            <h2 class="text-xl">LYRIC</h2>
-            <button
-              id="print-button"
-              class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100"
-            >
-              <span
-                class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 flex"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z"
-                  ></path>
-                </svg>
-
-                Print
-              </span>
-            </button>
-          </div>
+          <MultiAds />
         </div>
-        <ServerRenderOnly data={Astro.props} />
-        <div class="grid grid-cols-1 md:grid-cols-4">
-          <div id="contain-body" class="col-span-3">
-            <slot />
-          </div>
-          <div>
-            <MultiAds />
-          </div>
-        </div>
-        <GoogleAds />
-        <div class="border-b my-4"></div>
-        <div class="flex justify-start items-center">
-          <p>SHARE</p>
-          <a
-            href={`https://fb.com/sharer/sharer.php?u=${canonicalURL}`}
-            target="_blank"
-            class="mx-4"
-          >
-            <img
-              src="/social/Facebook.png"
-              alt="Facebook logo"
-              class="h-5 w-5"
-            />
-          </a>
-          <a
-            href={`https://twitter.com/share?url=${canonicalURL}`}
-            target="_blank"
-          >
-            <img src="/social/x.png" alt="Facebook logo" class="h-5 w-5" />
-          </a>
-          <span id="url" class="sr-only">{canonicalURL}</span>
-          <svg
-            id="copy-it"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6 ml-2 cursor-pointer"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <div class="border-b my-4"></div>
+      </div>
+      <GoogleAds />
+      <div class="border-b my-4"></div>
+      <div class="flex justify-start items-center">
+        <p>SHARE</p>
+        <a
+          href={`https://fb.com/sharer/sharer.php?u=${canonicalURL}`}
+          target="_blank"
+          class="mx-4"
+        >
+          <img src="/social/Facebook.png" alt="Facebook logo" class="h-5 w-5" />
+        </a>
+        <a
+          href={`https://twitter.com/share?url=${canonicalURL}`}
+          target="_blank"
+        >
+          <img src="/social/x.png" alt="Facebook logo" class="h-5 w-5" />
+        </a>
+        <span id="url" class="sr-only">{canonicalURL}</span>
+        <svg
+          id="copy-it"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6 ml-2 cursor-pointer"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="border-b my-4"></div>
 
-        <RelatedSong name={key} />
+      <RelatedSong name={key} />
 
-        <RelatedSongAd />
-      </article>
+      <RelatedSongAd />
     </main>
     <script type="text/javascript">
       const songTitle = document.getElementById("song-title").textContent;
