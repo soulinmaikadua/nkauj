@@ -40,33 +40,6 @@ const blogData = {
   pubDate,
   canonicalURL,
 };
-// injectScript({
-//   type: "application/ld+json",
-//   content: `{
-//     "@context": "https://schema.org",
-//     "@type": "BlogPosting",
-//     "headline": ${blogData.title},
-//     "description": ${blogData.description},
-//     "image": ${blogData.heroImage},
-//     "author": {
-//       "@type": "Person",
-//       "name": ${blogData.artist},
-//       "url": ${blogData.canonicalURL}
-//     },
-//     "datePublished": ${blogData.pubDate},
-//     "dateModified": ${blogData.pubDate},
-//     "publisher": {
-//       "@type": "Organization",
-//       "name": ${blogData.artist},
-//       "logo": {
-//         "@type": "ImageObject",
-//         "url": ${blogData.heroImage}
-//       }
-//     },
-//     "keywords": ${blogData.title}
-//   }
-//   `,
-// });
 ---
 
 <html lang="en">
@@ -112,9 +85,10 @@ const blogData = {
       </div>
       <div>
         <div class="flex justify-between items-center">
-          <h2 class="text-xl">LYRIC</h2>
+          <p class="text-xl">LYRIC</p>
           <button
             id="print-button"
+            aria-label="Print button"
             class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100"
           >
             <span
@@ -158,13 +132,13 @@ const blogData = {
           target="_blank"
           class="mx-4"
         >
-          <img src="/social/Facebook.png" alt="Facebook logo" class="h-5 w-5" />
+          <img src="/social/Facebook.png" alt="facebook logo" class="h-5 w-5" />
         </a>
         <a
           href={`https://twitter.com/share?url=${canonicalURL}`}
           target="_blank"
         >
-          <img src="/social/x.png" alt="Facebook logo" class="h-5 w-5" />
+          <img src="/social/x.png" alt="x logo" class="h-5 w-5" />
         </a>
         <span id="url" class="sr-only">{canonicalURL}</span>
         <svg

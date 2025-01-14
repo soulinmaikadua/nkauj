@@ -55,6 +55,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
             </h2>
             <button
               id="print-button"
+              aria-label="Print button"
               class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100"
             >
               <span
@@ -99,7 +100,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
           >
             <img
               src="/social/Facebook.png"
-              alt="Facebook logo"
+              alt="facebook logo"
               class="h-5 w-5"
             />
           </a>
@@ -107,7 +108,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
             href={`https://twitter.com/share?url=${canonicalURL}`}
             target="_blank"
           >
-            <img src="/social/x.png" alt="Facebook logo" class="h-5 w-5" />
+            <img src="/social/x.png" alt="x logo" class="h-5 w-5" />
           </a>
           <span id="url" class="sr-only">{canonicalURL}</span>
           <svg
