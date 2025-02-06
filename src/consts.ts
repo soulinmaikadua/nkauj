@@ -1118,6 +1118,21 @@ export const ARTISTS = [
     value: "pob-tsuas-vaj",
     description: "Pob Tsuas Vaj lyrics",
   },
+  {
+    name: "Hmoov Muas",
+    value: "hmoov-muas",
+    description: "Hmoov Muas lyrics",
+  },
+  {
+    name: "Jerry Thoj",
+    value: "jerry-thoj",
+    description: "Jerry Thoj lyrics",
+  },
+  {
+    name: "Gina Yang",
+    value: "gina-yang",
+    description: "Gina Yang lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
