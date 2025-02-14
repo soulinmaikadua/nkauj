@@ -1138,6 +1138,11 @@ export const ARTISTS = [
     value: "truly-xiong",
     description: "Truly Xiong lyrics",
   },
+  {
+    name: "Zeb Vwj",
+    value: "zeb-vwj",
+    description: "Zeb Vwj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
