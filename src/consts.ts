@@ -1143,6 +1143,16 @@ export const ARTISTS = [
     value: "zeb-vwj",
     description: "Zeb Vwj lyrics",
   },
+  {
+    name: "Maiv Yias Vwj",
+    value: "maiv-yias-vwj",
+    description: "Maiv Yias Vwj lyrics",
+  },
+  {
+    name: "Maiv Muas Thoj",
+    value: "maiv-muas-thoj",
+    description: "Maiv Muas Thoj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
