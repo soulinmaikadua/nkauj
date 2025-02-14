@@ -1133,6 +1133,11 @@ export const ARTISTS = [
     value: "gina-yang",
     description: "Gina Yang lyrics",
   },
+  {
+    name: "Truly Xiong",
+    value: "truly-xiong",
+    description: "Truly Xiong lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
