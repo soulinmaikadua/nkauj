@@ -1153,6 +1153,11 @@ export const ARTISTS = [
     value: "maiv-muas-thoj",
     description: "Maiv Muas Thoj lyrics",
   },
+  {
+    name: "Nruas Vwj",
+    value: "nruas-vwj",
+    description: "Nruas Vwj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
