@@ -1133,6 +1133,31 @@ export const ARTISTS = [
     value: "gina-yang",
     description: "Gina Yang lyrics",
   },
+  {
+    name: "Truly Xiong",
+    value: "truly-xiong",
+    description: "Truly Xiong lyrics",
+  },
+  {
+    name: "Zeb Vwj",
+    value: "zeb-vwj",
+    description: "Zeb Vwj lyrics",
+  },
+  {
+    name: "Maiv Yias Vwj",
+    value: "maiv-yias-vwj",
+    description: "Maiv Yias Vwj lyrics",
+  },
+  {
+    name: "Maiv Muas Thoj",
+    value: "maiv-muas-thoj",
+    description: "Maiv Muas Thoj lyrics",
+  },
+  {
+    name: "Nruas Vwj",
+    value: "nruas-vwj",
+    description: "Nruas Vwj lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [
