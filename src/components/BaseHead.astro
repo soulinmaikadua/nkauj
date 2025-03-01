@@ -73,7 +73,10 @@ const { title, description, image = "/logo.png" } = Astro.props;
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-  gtag("config", "G-F3F58WGZCM");
+  gtag("config", "G-F3F58WGZCM", {
+    cookie_domain: "nkauj.com",
+    cookie_flags: "SameSite=None; Secure",
+  });
 </script>
 <script src="/js/main.js" defer></script>
 <!-- Link to your JavaScript file -->
