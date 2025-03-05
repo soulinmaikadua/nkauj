@@ -1163,6 +1163,16 @@ export const ARTISTS = [
     value: "nuj-xeem",
     description: "Nuj Xeem lyrics",
   },
+  {
+    name: "Im Hawj",
+    value: "im-hawj",
+    description: "Im Hawj lyrics",
+  },
+  {
+    name: "Ciaj Sia",
+    value: "ciaj-sia",
+    description: "Ciaj Sia lyrics",
+  },
 ];
 
 export const ARTISTS_GUITAR = [

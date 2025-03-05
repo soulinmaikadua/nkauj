@@ -1,0 +1,21 @@
+{
+  "name": "Ntawv Nkauj Hmoob",
+  "short_name": "Nkauj",
+  "start_url": "/",
+  "description": "Ntawv nkauj hmoob, nkauj hmoob, nkauj tawm tshiab, nkauj hmoob kho siab, nkauj hmoob zoo nkauj",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
