@@ -103,6 +103,18 @@ const { title, description, image = "/logo.png" } = Astro.props;
   });
 </script>
 <script src="/js/main.js" defer></script>
+<script type="text/javascript">
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((_) => {})
+      .catch((_) => {});
+  }
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault(); // Prevent default browser prompt
+    // installPromptEvent.value = event; // Store the event
+  });
+</script>
 <!-- Link to your JavaScript file -->
 <!-- Google Tag Manager -->
 <script type="text/javascript">
