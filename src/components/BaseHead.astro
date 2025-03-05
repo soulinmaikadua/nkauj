@@ -17,7 +17,29 @@ const { title, description, image = "/logo.png" } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- SEO & Indexing -->
+<meta name="robots" content="index, follow" />
+<!-- Fallback Favicon -->
 <link rel="icon" type="icon" href="/favicon.ico" />
+
+<!-- Apple Touch Icon (for iOS Home Screen) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+<!-- Android Chrome Icons -->
+<link rel="icon" sizes="192x192" href="/android-chrome-192x192.png" />
+<link rel="icon" sizes="512x512" href="/android-chrome-512x512.png" />
+
+<!-- PWA & Mobile Web App Settings -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Nkauj" />
+
+<!-- Theme & UI Styling -->
+<meta name="theme-color" content="#FFFFFF" />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="white-translucent"
+/>
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
@@ -44,6 +66,7 @@ const { title, description, image = "/logo.png" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
 <!-- Google and Microsoft -->
 <meta
   name="google-site-verification"
@@ -66,6 +89,7 @@ const { title, description, image = "/logo.png" } = Astro.props;
   type="text/javascript"
   async
   src="https://www.googletagmanager.com/gtag/js?id=G-F3F58WGZCM"></script>
+
 <!--  Google Analytics -->
 <script type="text/javascript">
   window.dataLayer = window.dataLayer || [];
