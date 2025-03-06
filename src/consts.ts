@@ -1281,4 +1281,9 @@ export const ARTISTS_GUITAR = [
     value: "hav-iav-guitar",
     description: "Hav Iav Guitar Chords",
   },
+  {
+    name: "ICU (Kub Vaj)",
+    value: "icu-kub-vaj-guitar",
+    description: "ICU (Kub Vaj) Guitar Chords",
+  },
 ];
