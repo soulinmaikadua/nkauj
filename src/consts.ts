@@ -1266,4 +1266,19 @@ export const ARTISTS_GUITAR = [
     value: "pob-tsuas-xyooj-guitar",
     description: "Pob Tsuas Xyooj Guitar Chords",
   },
+  {
+    name: "Pov Thoj",
+    value: "pov-thoj-guitar",
+    description: "Pov Thoj Guitar Chords",
+  },
+  {
+    name: "Xab Thoj",
+    value: "xab-thoj-guitar",
+    description: "Xab Thoj Guitar Chords",
+  },
+  {
+    name: "Hav Iav",
+    value: "hav-iav-guitar",
+    description: "Hav Iav Guitar Chords",
+  },
 ];
