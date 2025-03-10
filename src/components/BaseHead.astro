@@ -103,6 +103,18 @@ const { title, description, image = "/logo.png" } = Astro.props;
   });
 </script>
 <script src="/js/main.js" defer></script>
+<script type="text/javascript">
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((_) => {})
+      .catch((_) => {});
+  }
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault(); // Prevent default browser prompt
+    // installPromptEvent.value = event; // Store the event
+  });
+</script>
 <!-- Link to your JavaScript file -->
 <!-- Google Tag Manager -->
 <script type="text/javascript">
@@ -128,11 +140,12 @@ const { title, description, image = "/logo.png" } = Astro.props;
       };
     t = l.createElement(r);
     t.async = 1;
-    t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+    t.src = "https://www.clarity.ms/tag/" + i + "?ref=gtm2";
     y = l.getElementsByTagName(r)[0];
     y.parentNode.insertBefore(t, y);
   })(window, document, "clarity", "script", "g2djvhbmmj");
 </script>
+
 <!-- End Microsoft Clarify -->
 <script type="application/ld+json">
   {
