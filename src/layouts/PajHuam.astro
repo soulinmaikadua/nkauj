@@ -43,7 +43,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
       <article>
         <div class="mb-5">
           {artist && <p>Artist: {artist}</p>}
-          <h1 class="text-3xl font-bold">{title}</h1>
+          <h1 class="text-xl md:text-3xl font-bold">{title}</h1>
           <p class="text-sm">
             Published: <time datetime={pubDate}>{formattedDate}</time>
           </p>
