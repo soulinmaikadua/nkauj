@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import ZajTshoob from "../../components/ZajTshoob.astro";
+import ZajTshoobPage from "../../layouts/ZajTshoobPage.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("zaj-tshoob");
@@ -13,8 +13,12 @@ type Props = CollectionEntry<"zaj-tshoob">;
 
 const post = Astro.props;
 const { Content } = await post.render();
+const newProps = {
+  ...post.data,
+  key: "zaj-tshoob",
+};
 ---
 
-<ZajTshoob {...post.data}>
+<ZajTshoobPage {...newProps}>
   <Content />
-</ZajTshoob>
+</ZajTshoobPage>

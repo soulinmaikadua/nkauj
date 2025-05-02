@@ -42,8 +42,8 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <main class="max-w-6xl mx-auto px-4">
       <article>
         <div class="mb-5">
-          {artist && <p>Artist: {artist}</p>}
           <h1 class="text-xl md:text-3xl font-bold">{title}</h1>
+          {artist && <p>Artist: {artist}</p>}
           <p class="text-sm">
             Published: <time datetime={pubDate}>{formattedDate}</time>
           </p>
@@ -51,7 +51,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
         <div>
           <div class="flex justify-between items-center">
             <h2 class="text-xl">
-              Ntawv Paj Huam
+             Ntawv Zaj Tshoob
             </h2>
             <button
               id="print-button"
@@ -125,7 +125,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
           </svg>
         </div>
         <div class="border-b my-4"></div>
-        <RelatedSong title="Cov Ntawv Paj Huam Txuas Ntxiv" name={key} />
+        <RelatedSong title="Cov Ntawv Zaj Tshoob Txuas Ntxiv" name={key} />
       </article>
     </main>
     <Footer />
