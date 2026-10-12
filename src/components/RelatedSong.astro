@@ -5,7 +5,7 @@ const { name } = Astro.props;
 const { slug } = Astro.params;
 
 const posts = (await getCollection(name)).filter(
-  (post: any) => post.slug !== slug,
+  (post: any) => post.id !== slug,
 );
 ---
 
@@ -19,7 +19,7 @@ const posts = (await getCollection(name)).filter(
       <ul class="mt-4">
         {posts.map((post: any) => (
           <li class="border-b mb-1 pb-1">
-            <a href={`/${name}/${post.slug}/`} class="hover:underline">
+            <a href={`/${name}/${post.id}/`} class="hover:underline">
               <h5 class="text-xl md:text-2xl">{post.data.title}</h5>
             </a>
             <p class="text-sm mt-n4">

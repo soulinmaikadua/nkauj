@@ -35,7 +35,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
 });
 ---
 
-<html lang="en">
+<html lang="hmn">
   <head>
     <BaseHead
       title={`${title} By ${artist} Guitar Chords - ${SITE_TITLE} Hmoob`}
@@ -46,23 +46,22 @@ const formattedDate = date.toLocaleDateString("en-US", {
 
   <body>
     <Header />
-    <main class="max-w-6xl mx-auto my-3 px-4">
+    <main class="content-page">
       <article>
-        <div class="flex justify-start pb-3 mb-5 border-b">
-          <div
-            class="max-w-32 max-h-32 rounded-md shadow-lg bg-white shadow-red-100"
-          >
+        <section class="content-hero">
+          <div>
             <img
               src={heroImage}
               id="image"
               alt={artist}
-              class="rounded-md"
+              class="song-cover"
               height="128"
               width="128"
             />
           </div>
-          <div class="ml-5">
-            <h1 id="song-title" class="text-xl md:text-3xl font-bold">
+          <div>
+            <span class="content-kicker">Guitar chords</span>
+            <h1 id="song-title">
               {title}
             </h1>
             {
@@ -72,28 +71,29 @@ const formattedDate = date.toLocaleDateString("en-US", {
                 </p>
               )
             }
-            <p>
+            <p class="content-meta">
               Artist: <a
                 href={`/${key}`}
                 id="artist-name"
                 class="hover:underline hover:text-red-400">{artist}</a
               >
             </p>
-            <p class="text-sm">
+            <p class="content-meta">
               Published: <time datetime={pubDate}>{formattedDate}</time>
             </p>
           </div>
-        </div>
+        </section>
+        <section class="reading-card">
         <div>
           <div class="flex justify-between items-center">
-            <p class="text-xl">GUITAR CHORDS</p>
+            <p class="eyebrow">Guitar chords</p>
             <button
               id="print-button"
               aria-label="Print button"
-              class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100"
+              class="no-print print-button"
             >
               <span
-                class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 flex"
+                class="flex items-center gap-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -164,6 +164,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
         <RelatedGuitar name={key} />
 
         <RelatedSongAd />
+        </section>
       </article>
     </main>
     <script type="text/javascript">

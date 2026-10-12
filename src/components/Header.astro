@@ -2,83 +2,53 @@
 import { SITE_TITLE } from "../consts";
 ---
 
-<header class="mb-10">
-  <nav class="bg-transparent">
-    <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-    >
-      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="/logo.png" class="h-8 w-8" alt="Nkauj Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap"
-          >{SITE_TITLE}</span
-        >
+<header class="site-header">
+  <nav aria-label="Main navigation">
+    <div class="nav-shell">
+      <a href="/" class="brand" aria-label={`${SITE_TITLE} home`}>
+        <span class="brand-mark"><img src="/logo.png" alt="" /></span>
+        <span>
+          <strong>{SITE_TITLE}</strong>
+          <small>Hmong music archive</small>
+        </span>
       </a>
-      <button
-        id="toggleBtn"
-        data-collapse-toggle="navbar-default"
-        type="button"
-        aria-label="open main menu"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-200"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-      >
+      <button id="toggleBtn" type="button" aria-label="Open main menu" class="menu-toggle" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"></path>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path>
         </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 border shadow-lg shadow-red-100 border-gray-100 rounded-lg bg-gray-50 md:shadow-none md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent"
-        >
-          <li>
-            <a
-              href="/"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:border-0 hover:text-red-400 md:p-0"
-              aria-current="page">Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="/#lyrics-section"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:border-0 hover:text-red-400 md:p-0"
-              >Lyrics</a
-            >
-          </li>
-          <li>
-            <a
-              href="/#guitar-section"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:border-0 hover:text-red-400 md:p-0"
-              aria-current="page">Guitar</a
-            >
-          </li>
-          <li>
-            <a
-              href="/paj-huam/"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:border-0 hover:text-red-400 md:p-0"
-              aria-current="page">Paj Huam</a
-            >
-          </li>
-          <li>
-            <a
-              href="/zaj-tshoob/"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-transparent md:border-0 hover:text-red-400 md:p-0"
-              aria-current="page">Zaj Tshoob</a
-            >
-          </li>
+      <div class="nav-links hidden md:block" id="navbar-default">
+        <ul>
+          <li><a href="/" class={Astro.url.pathname === "/" ? "active" : ""}>Home</a></li>
+          <li><a href="/#lyrics-section">Lyrics</a></li>
+          <li><a href="/#guitar-section">Guitar</a></li>
+          <li><a href="/paj-huam/">Paj Huam</a></li>
+          <li><a href="/zaj-tshoob/">Zaj Tshoob</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
+
+<style>
+  .site-header { position: sticky; top: 0; z-index: 50; margin-bottom: 1rem; border-bottom: 1px solid rgba(var(--line), .72); background: rgba(251, 248, 243, .88); backdrop-filter: blur(18px); }
+  .nav-shell { width: min(1180px, calc(100% - 2rem)); min-height: 76px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
+  .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 13px; background: rgb(var(--plum-dark)); box-shadow: 0 8px 22px rgba(var(--plum-dark), .2); }
+  .brand-mark img { width: 28px; height: 28px; border-radius: 8px; }
+  .brand strong { display: block; color: rgb(var(--plum-dark)); font-family: 'Newsreader', Georgia, serif; font-size: 1.35rem; line-height: 1; }
+  .brand small { display: block; margin-top: .2rem; color: rgb(var(--muted)); font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
+  .nav-links ul { display: flex; align-items: center; gap: .25rem; margin: 0; padding: 0; list-style: none; }
+  .nav-links a { display: block; padding: .55rem .8rem; border-radius: 999px; color: rgb(var(--muted)); font-size: .9rem; font-weight: 600; text-decoration: none; transition: .2s ease; }
+  .nav-links a:hover, .nav-links a.active { color: rgb(var(--plum)); background: rgba(var(--plum), .07); }
+  .menu-toggle { display: none; width: 42px; height: 42px; place-items: center; border: 1px solid rgba(var(--line), .9); border-radius: 12px; color: rgb(var(--plum)); background: rgba(var(--white), .7); }
+  @media (max-width: 767px) {
+    .menu-toggle { display: grid; }
+    .nav-links { width: 100%; }
+    .nav-links.hidden { display: none; }
+    .nav-shell { flex-wrap: wrap; padding: .75rem 0; }
+    .nav-links ul { align-items: stretch; flex-direction: column; padding: .5rem 0 1rem; }
+    .nav-links a { padding: .75rem 1rem; }
+  }
+</style>
