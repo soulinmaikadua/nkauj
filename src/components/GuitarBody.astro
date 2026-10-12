@@ -30,29 +30,33 @@ const today = new Date();
 </head>
 <body>
   <Header />
-  <main class="max-w-6xl mx-auto px-4 py-3 min-h-screen">
-    <div
-      class="max-w-32 max-h-32 mb-2 rounded-md shadow-lg bg-white shadow-red-100"
-    >
+  <main class="content-page min-h-screen">
+    <section class="content-hero">
+    <div>
       <img
         src={posts[0]?.data.heroImage}
         alt={singer?.name}
-        class="rounded-md"
+        class="artist-cover"
       />
     </div>
-    <h1 class="text-xl md:text-3xl font-bold">{singer?.name}</h1>
+    <div>
+    <span class="content-kicker">Guitar collection</span>
+    <h1>{singer?.name}</h1>
+    <p class="content-meta">{posts.length} chord guides in this collection</p>
+    </div>
+    </section>
     <h2 class="sr-only">{singer?.name} Songs</h2>
     <h3 class="sr-only">{singer?.name} Lyrics</h3>
     <h4 class="sr-only">
       {today.getFullYear()}/{today.getMonth() - 1}/{today.getDate()}
     </h4>
-    <div class="border-b"></div>
-    <section>
-      <ul>
+    <section class="reading-card">
+      <div class="section-heading"><div><span class="eyebrow">Play along</span><h2>Guitar chords</h2></div></div>
+      <ul class="artist-list">
         {
           posts.map((post: any) => (
             <li class="border-b pb-2 my-2">
-              <a href={`/${name}/${post.slug}/`} class="hover:underline">
+              <a href={`/${name}/${post.id}/`} class="hover:underline">
                 <h4 class="text-xl md:text-2xl">{post.data.title}</h4>
               </a>
               <div class="text-sm">{dateFormat(post.data.pubDate)}</div>

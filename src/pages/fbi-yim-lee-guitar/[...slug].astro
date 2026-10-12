@@ -1,18 +1,18 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import GuitarPage from "../../layouts/GuitarPage.astro";
 export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("fbi-yim-lee-guitar");
   return posts.map((post: any) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: post,
   }));
 }
 type Props = CollectionEntry<"fbi-yim-lee-guitar">;
 
 const post = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 const newProps = {
   ...post.data,
   key: "fbi-yim-lee-guitar",

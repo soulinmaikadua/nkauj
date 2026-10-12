@@ -2,108 +2,147 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import {
-  SITE_TITLE,
-  SITE_DESCRIPTION,
-  ARTISTS,
-  ARTISTS_GUITAR,
-} from "../consts";
-const today = new Date();
-ARTISTS.sort((a: any, b: any) => {
-  // Convert names to lowercase for case-insensitive sorting
-  const nameA = a.name.toLowerCase();
-  const nameB = b.name.toLowerCase();
+import { SITE_TITLE, SITE_DESCRIPTION, ARTISTS, ARTISTS_GUITAR } from "../consts";
 
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-  return 0;
-});
-
-ARTISTS_GUITAR.sort((a: any, b: any) => {
-  // Convert names to lowercase for case-insensitive sorting
-  const nameA = a.name.toLowerCase();
-  const nameB = b.name.toLowerCase();
-
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-  return 0;
-});
+const artists = [...ARTISTS].sort((a, b) => a.name.localeCompare(b.name));
+const guitarArtists = [...ARTISTS_GUITAR].sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="hmn">
   <head>
-    <BaseHead
-      title={`${SITE_TITLE} - Ntawv nkauj, paj huam, zaj tshoob hmoob`}
-      description={SITE_DESCRIPTION}
-    />
+    <BaseHead title={`${SITE_TITLE} — Ntawv nkauj, paj huam thiab guitar chords Hmoob`} description={SITE_DESCRIPTION} />
   </head>
-  <body class="bg-gradient-to-r from-red-50 via-red-200 to-yellow-50">
+  <body>
     <Header />
-    <main class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-center my-32">🧑🏽‍💻</h1>
-      <div class="my-12 text-center">
-        <h1 class="text-3xl">Welcome to Nkauj.com, Hmong Song Lyrics</h1>
-      </div>
-      <p>Name of hmong artists</p>
-      <h1 class="sr-only">Nkauj hmoob</h1>
-      <h2 class="sr-only">Nkauj hmoob kho siab</h2>
-      <h3 class="sr-only">Nkauj tawm tshiab {today.getFullYear()}</h3>
-      <h4 class="sr-only">Nkauj hmoob toj siab</h4>
-      <h5 class="sr-only">Nkauj hmoob zoo nkauj</h5>
-      <h6 class="sr-only">Nkauj kho siab</h6>
-      <p>🎤🪈🎸</p>
-      <div id="lyrics-section" class="mt-5">
-        <div class="my-5">
-          <h1 class="text-3xl">Song Lyrics</h1>
+    <main>
+      <section class="hero site-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">The Hmong music archive</span>
+          <h1>Every song carries a <em>story.</em></h1>
+          <p>Discover Hmong lyrics, guitar chords, poetry, and ceremonial writing—carefully gathered in one beautiful place.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#lyrics-section">Explore lyrics</a>
+            <a class="secondary-action" href="#guitar-section">Browse chords <span aria-hidden="true">↗</span></a>
+          </div>
+          <dl>
+            <div><dt>{artists.length}+</dt><dd>Lyric artists</dd></div>
+            <div><dt>{guitarArtists.length}+</dt><dd>Chord artists</dd></div>
+            <div><dt>Hmoob</dt><dd>Made for our community</dd></div>
+          </dl>
         </div>
-        {
-          ARTISTS.map((artist) => {
-            return (
-              <a href={`/${artist.value}/`}>
-                <button
-                  aria-label={artist.name}
-                  class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200  focus:ring-4 focus:outline-none focus:ring-red-100"
-                >
-                  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
-                    {artist.name}
-                  </span>
-                </button>
-              </a>
-            );
-          })
-        }
-      </div>
-      <div id="guitar-section" class="mt-5">
-        <div class="my-5">
-          <h1 class="text-3xl">Guitar Chords</h1>
+        <div class="hero-art" aria-hidden="true">
+          <div class="record">
+            <div class="record-groove"></div>
+            <div class="record-label"><img src="/logo.png" alt="" /></div>
+          </div>
+          <div class="now-playing">
+            <span class="bars"><i></i><i></i><i></i><i></i></span>
+            <div><small>NOW EXPLORING</small><strong>Suab nkauj Hmoob</strong></div>
+          </div>
         </div>
-        {
-          ARTISTS_GUITAR.map((artist) => {
-            return (
-              <a href={`/${artist.value}/`}>
-                <button
-                  aria-label={artist.name}
-                  class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200  focus:ring-4 focus:outline-none focus:ring-red-100"
-                >
-                  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
-                    {artist.name}
-                  </span>
-                </button>
-              </a>
-            );
-          })
-        }
-      </div>
+      </section>
+
+      <section class="discovery site-shell">
+        <div class="search-wrap surface">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <label class="sr-only" for="artist-search">Search artists</label>
+          <input id="artist-search" type="search" placeholder="Search for an artist…" autocomplete="off" />
+          <kbd>/</kbd>
+        </div>
+      </section>
+
+      <section id="lyrics-section" class="library site-shell" data-library>
+        <div class="section-heading">
+          <div><span class="eyebrow">Words & melodies</span><h2>Song lyrics</h2></div>
+          <p>Explore an extensive library of Hmong artists and the words behind their music.</p>
+        </div>
+        <div class="artist-grid">
+          {artists.map((artist, index) => (
+            <a href={`/${artist.value}/`} class="artist-card" data-artist={artist.name.toLowerCase()}>
+              <span class="artist-index">{String(index + 1).padStart(2, "0")}</span>
+              <span>{artist.name}</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section id="guitar-section" class="library guitar-library site-shell" data-library>
+        <div class="section-heading">
+          <div><span class="eyebrow">Play along</span><h2>Guitar chords</h2></div>
+          <p>Find clear chord guides for Hmong songs, ready to practice, play, and share.</p>
+        </div>
+        <div class="artist-grid">
+          {guitarArtists.map((artist, index) => (
+            <a href={`/${artist.value}/`} class="artist-card" data-artist={artist.name.toLowerCase()}>
+              <span class="artist-index">{String(index + 1).padStart(2, "0")}</span>
+              <span>{artist.name}</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      </section>
     </main>
     <Footer />
+    <script>
+      const search = document.querySelector<HTMLInputElement>("#artist-search");
+      const cards = [...document.querySelectorAll<HTMLElement>("[data-artist]")];
+      search?.addEventListener("input", (event) => {
+        const value = (event.currentTarget as HTMLInputElement).value.trim().toLowerCase();
+        cards.forEach((card) => card.hidden = !(card.dataset.artist || "").includes(value));
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "/" && document.activeElement !== search) {
+          event.preventDefault();
+          search?.focus();
+        }
+      });
+    </script>
   </body>
 </html>
+
+<style>
+  .hero { min-height: 620px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: clamp(2rem, 6vw, 6rem); padding-block: clamp(4rem, 10vw, 8rem); }
+  .hero-copy h1 { max-width: 760px; margin-top: .85rem; font-size: clamp(3.4rem, 7vw, 6.8rem); }
+  .hero-copy h1 em { color: rgb(var(--plum)); font-weight: 500; }
+  .hero-copy > p { max-width: 620px; margin: 1.5rem 0 0; color: rgb(var(--muted)); font-size: clamp(1.05rem, 2vw, 1.25rem); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+  .hero-actions a { padding: .85rem 1.25rem; border-radius: 999px; font-size: .92rem; font-weight: 700; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+  .hero-actions a:hover { transform: translateY(-2px); }
+  .primary-action { color: white; background: rgb(var(--plum)); box-shadow: 0 12px 26px rgba(var(--plum), .22); }
+  .secondary-action { color: rgb(var(--plum)); border: 1px solid rgba(var(--plum), .2); background: rgba(var(--white), .55); }
+  dl { display: flex; flex-wrap: wrap; gap: 2.5rem; margin: 3rem 0 0; }
+  dl div { display: grid; }
+  dt { color: rgb(var(--plum-dark)); font-family: 'Newsreader', Georgia, serif; font-size: 1.65rem; font-weight: 700; }
+  dd { margin: 0; color: rgb(var(--muted)); font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; }
+  .hero-art { position: relative; display: grid; place-items: center; min-height: 430px; }
+  .hero-art::before { content: ''; position: absolute; width: 90%; aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(var(--gold), .28); box-shadow: inset 0 0 0 35px rgba(var(--gold), .035); }
+  .record { position: relative; display: grid; place-items: center; width: min(380px, 78vw); aspect-ratio: 1; border-radius: 50%; background: repeating-radial-gradient(circle, #27131d 0 3px, #351923 4px 6px); box-shadow: 0 40px 80px rgba(var(--plum-dark), .28); animation: float 7s ease-in-out infinite; }
+  .record-groove { position: absolute; inset: 10%; border: 1px solid rgba(255,255,255,.08); border-radius: inherit; box-shadow: inset 0 0 0 28px rgba(255,255,255,.015), 0 0 0 28px rgba(255,255,255,.015); }
+  .record-label { display: grid; place-items: center; width: 34%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #f7ead1, #c99750); }
+  .record-label img { width: 48%; border-radius: 50%; }
+  .now-playing { position: absolute; right: 0; bottom: 1rem; display: flex; align-items: center; gap: .9rem; padding: .85rem 1rem; border: 1px solid rgba(var(--line), .8); border-radius: 1rem; background: rgba(var(--white), .9); box-shadow: 0 18px 45px rgba(var(--plum-dark), .14); }
+  .now-playing small, .now-playing strong { display: block; }
+  .now-playing small { color: rgb(var(--gold)); font-size: .58rem; letter-spacing: .14em; }
+  .now-playing strong { color: rgb(var(--plum-dark)); font-family: 'Newsreader', Georgia, serif; }
+  .bars { display: flex; align-items: center; gap: 3px; height: 24px; }
+  .bars i { width: 3px; border-radius: 4px; background: rgb(var(--plum)); animation: pulse 1s ease-in-out infinite alternate; }
+  .bars i:nth-child(1) { height: 35%; }.bars i:nth-child(2) { height: 80%; animation-delay: .2s; }.bars i:nth-child(3) { height: 55%; animation-delay: .4s; }.bars i:nth-child(4) { height: 95%; animation-delay: .1s; }
+  .discovery { margin-bottom: 6rem; }
+  .search-wrap { display: flex; align-items: center; max-width: 720px; margin: auto; padding: .8rem 1rem; color: rgb(var(--muted)); }
+  .search-wrap input { width: 100%; padding: .4rem .75rem; border: 0; outline: 0; color: rgb(var(--ink)); background: transparent; font: inherit; }
+  .search-wrap kbd { padding: .15rem .45rem; border: 1px solid rgba(var(--line), .9); border-radius: .4rem; background: rgb(var(--paper)); font-size: .72rem; }
+  .library { padding-block: 2rem 6rem; scroll-margin-top: 100px; }
+  .artist-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+  .artist-card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .9rem; min-height: 76px; padding: .8rem 1rem; border: 1px solid rgba(var(--line), .7); border-radius: 1rem; background: rgba(var(--white), .62); text-decoration: none; font-weight: 600; transition: .2s ease; }
+  .artist-card:hover { transform: translateY(-3px); border-color: rgba(var(--gold), .65); background: rgba(var(--white), .95); box-shadow: 0 14px 32px rgba(var(--plum-dark), .08); }
+  .artist-index { color: rgb(var(--gold)); font-family: 'Newsreader', Georgia, serif; font-size: .8rem; }
+  .arrow { color: rgb(var(--plum)); opacity: .55; }
+  .guitar-library { border-top: 1px solid rgba(var(--line), .8); }
+  [hidden] { display: none !important; }
+  @keyframes float { 50% { transform: translateY(-10px) rotate(2deg); } }
+  @keyframes pulse { to { height: 25%; } }
+  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .hero-art { min-height: 390px; } .artist-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .hero { min-height: 0; padding-top: 3.5rem; } .hero-copy h1 { font-size: clamp(3rem, 15vw, 4.6rem); } .hero-art { min-height: 330px; } .artist-grid { grid-template-columns: 1fr; } dl { gap: 1.5rem; } }
+</style>
