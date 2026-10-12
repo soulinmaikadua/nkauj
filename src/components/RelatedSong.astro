@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { dateFormat } from "../utils";
-const { name } = Astro.props;
+const { name, title } = Astro.props;
 const { slug } = Astro.params;
 
 const posts = (await getCollection(name)).filter(
@@ -13,7 +13,7 @@ const posts = (await getCollection(name)).filter(
   posts.length > 0 && (
     <>
       <div class="my-4">
-        <p>RELATED SONG LYRICS</p>
+        <p>{title ? title :'RELATED SONG LYRICS'}</p>
       </div>
       <div class="border-b" />
       <ul class="mt-4">

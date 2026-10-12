@@ -7,7 +7,7 @@ import RelatedGuitar from "../components/RelatedGuitar.astro";
 import GoogleAds from "../components/GoogleAds.astro";
 import MultiAds from "../components/MultiAds.astro";
 import RelatedSongAd from "../components/RelatedSongAd.astro";
-import { SITE_TITLE } from "../consts";
+import { SITE_TITLE, SITE_URL } from "../consts";
 
 interface Props {
   title: string;
@@ -26,7 +26,7 @@ const { title, description, artist, heroImage, pubDate, key, image, tone } =
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 // Parse the date string
 const date = new Date(pubDate);
-
+const imageSEO = SITE_URL +  image || heroImage || "/logo.png";
 // Format the date
 const formattedDate = date.toLocaleDateString("en-US", {
   year: "numeric",
@@ -40,7 +40,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
     <BaseHead
       title={`${title} By ${artist} Guitar Chords - ${SITE_TITLE} Hmoob`}
       description={description}
-      image={image || heroImage}
+      image={imageSEO}
     />
   </head>
 
